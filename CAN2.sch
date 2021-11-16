@@ -1,0 +1,159 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_CAN_LIN:SN65HVD230 U?
+U 1 1 60451A64
+P 5700 3550
+AR Path="/60451338/60451A64" Ref="U?"  Part="1" 
+AR Path="/604559CA/60451A64" Ref="U?"  Part="1" 
+F 0 "U?" H 5700 4031 50  0000 C CNN
+F 1 "SN65HVD230" H 5700 3940 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5700 3050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn65hvd230.pdf" H 5600 3950 50  0001 C CNN
+	1    5700 3550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5300 3650
+Wire Wire Line
+	4900 3450 5300 3450
+Wire Wire Line
+	5700 3950 5700 4150
+$Comp
+L power:GND #PWR?
+U 1 1 604524E0
+P 5700 4150
+AR Path="/60451338/604524E0" Ref="#PWR?"  Part="1" 
+AR Path="/604559CA/604524E0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5700 3900 50  0001 C CNN
+F 1 "GND" H 5705 3977 50  0000 C CNN
+F 2 "" H 5700 4150 50  0001 C CNN
+F 3 "" H 5700 4150 50  0001 C CNN
+	1    5700 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3250 5700 2450
+Wire Wire Line
+	5700 2450 6150 2450
+Wire Wire Line
+	6150 2450 6150 2600
+Connection ~ 5700 2450
+Wire Wire Line
+	5700 2450 5700 2350
+$Comp
+L Device:CP1 C?
+U 1 1 60452B51
+P 6150 2750
+AR Path="/60451338/60452B51" Ref="C?"  Part="1" 
+AR Path="/604559CA/60452B51" Ref="C?"  Part="1" 
+F 0 "C?" H 6265 2796 50  0000 L CNN
+F 1 "0.1uF" H 6265 2705 50  0000 L CNN
+F 2 "" H 6150 2750 50  0001 C CNN
+F 3 "~" H 6150 2750 50  0001 C CNN
+	1    6150 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2900 6150 3050
+$Comp
+L power:GND #PWR?
+U 1 1 60453001
+P 6150 3050
+AR Path="/60451338/60453001" Ref="#PWR?"  Part="1" 
+AR Path="/604559CA/60453001" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6150 2800 50  0001 C CNN
+F 1 "GND" H 6155 2877 50  0000 C CNN
+F 2 "" H 6150 3050 50  0001 C CNN
+F 3 "" H 6150 3050 50  0001 C CNN
+	1    6150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60453119
+P 5700 2350
+AR Path="/60451338/60453119" Ref="#PWR?"  Part="1" 
+AR Path="/604559CA/60453119" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5700 2200 50  0001 C CNN
+F 1 "+3.3V" H 5715 2523 50  0000 C CNN
+F 2 "" H 5700 2350 50  0001 C CNN
+F 3 "" H 5700 2350 50  0001 C CNN
+	1    5700 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3550 4900 3550
+Wire Wire Line
+	5300 3750 5000 3750
+Wire Wire Line
+	5000 3750 5000 3900
+$Comp
+L power:GND #PWR?
+U 1 1 60453465
+P 5000 3900
+AR Path="/60451338/60453465" Ref="#PWR?"  Part="1" 
+AR Path="/604559CA/60453465" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5000 3650 50  0001 C CNN
+F 1 "GND" H 5005 3727 50  0000 C CNN
+F 2 "" H 5000 3900 50  0001 C CNN
+F 3 "" H 5000 3900 50  0001 C CNN
+	1    5000 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3550 6200 3550
+Text HLabel 4900 3450 0    50   Input ~ 0
+CAN_TX
+Text HLabel 4900 3550 0    50   Input ~ 0
+CAN_RX
+Text HLabel 6300 3550 2    50   Input ~ 0
+CAN_EXTH
+Text HLabel 6300 3650 2    50   Input ~ 0
+CAN_EXTL
+Wire Wire Line
+	6200 3550 6200 3350
+Wire Wire Line
+	6200 3350 6900 3350
+Wire Wire Line
+	6900 3350 6900 3500
+Connection ~ 6200 3550
+Wire Wire Line
+	6200 3550 6300 3550
+$Comp
+L Device:R_US R?
+U 1 1 6045400E
+P 6900 3650
+AR Path="/60451338/6045400E" Ref="R?"  Part="1" 
+AR Path="/604559CA/6045400E" Ref="R?"  Part="1" 
+F 0 "R?" H 6968 3696 50  0000 L CNN
+F 1 "120R" H 6968 3605 50  0000 L CNN
+F 2 "" V 6940 3640 50  0001 C CNN
+F 3 "~" H 6900 3650 50  0001 C CNN
+	1    6900 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3650 6200 3650
+Wire Wire Line
+	6900 3800 6900 4000
+Wire Wire Line
+	6900 4000 6200 4000
+Wire Wire Line
+	6200 4000 6200 3650
+Connection ~ 6200 3650
+Wire Wire Line
+	6200 3650 6300 3650
+$EndSCHEMATC

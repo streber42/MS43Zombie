@@ -1,0 +1,308 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 41 50
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SamacSys_Parts:TDA2822D013TR IC26
+U 1 1 60F4C755
+P 4850 3650
+F 0 "IC26" H 5850 3915 50  0000 C CNN
+F 1 "TDA2822D013TR" H 5850 3824 50  0000 C CNN
+F 2 "SOIC127P600X175-8N" H 6700 3750 50  0001 L CNN
+F 3 "https://www.st.com/resource/en/datasheet/tda2822d.pdf" H 6700 3650 50  0001 L CNN
+F 4 "STMICROELECTRONICS - TDA2822D013TR - Audio Power Amplifier, 300 mW, AB, 2 Channel, 1.8V to 15V, SOIC, 8 Pins" H 6700 3550 50  0001 L CNN "Description"
+F 5 "1.75" H 6700 3450 50  0001 L CNN "Height"
+F 6 "511-TDA2822D013TR" H 6700 3350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/TDA2822D013TR?qs=OOsz1LLk%2FofpG2Oz5Gq0hQ%3D%3D" H 6700 3250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "STMicroelectronics" H 6700 3150 50  0001 L CNN "Manufacturer_Name"
+F 9 "TDA2822D013TR" H 6700 3050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4850 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C76
+U 1 1 60F4CF8F
+P 7400 2800
+F 0 "C76" H 7285 2754 50  0000 R CNN
+F 1 "1uF" H 7285 2845 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7400 2800 50  0001 C CNN
+F 3 "~" H 7400 2800 50  0001 C CNN
+	1    7400 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP1 C77
+U 1 1 60F4D5AF
+P 8250 2800
+F 0 "C77" H 8135 2754 50  0000 R CNN
+F 1 "1uF" H 8135 2845 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8250 2800 50  0001 C CNN
+F 3 "~" H 8250 2800 50  0001 C CNN
+	1    8250 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP1 C73
+U 1 1 60F4DAD1
+P 3850 5250
+F 0 "C73" H 3965 5296 50  0000 L CNN
+F 1 "0.1uF" H 3965 5205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3850 5250 50  0001 C CNN
+F 3 "~" H 3850 5250 50  0001 C CNN
+	1    3850 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C72
+U 1 1 60F4DCED
+P 3400 4750
+F 0 "C72" H 3515 4796 50  0000 L CNN
+F 1 "1uF" H 3515 4705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3400 4750 50  0001 C CNN
+F 3 "~" H 3400 4750 50  0001 C CNN
+	1    3400 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C70
+U 1 1 60F4DF5B
+P 2000 5150
+F 0 "C70" H 2115 5196 50  0000 L CNN
+F 1 "0.1uF" H 2115 5105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2000 5150 50  0001 C CNN
+F 3 "~" H 2000 5150 50  0001 C CNN
+	1    2000 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C75
+U 1 1 60F4E0F7
+P 4250 3400
+F 0 "C75" V 3998 3400 50  0000 C CNN
+F 1 "100uF" V 4089 3400 50  0000 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 4288 3250 50  0001 C CNN
+F 3 "~" H 4250 3400 50  0001 C CNN
+	1    4250 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C74
+U 1 1 60F4EBDE
+P 4200 4100
+F 0 "C74" V 3948 4100 50  0000 C CNN
+F 1 "100uF" V 4039 4100 50  0000 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 4238 3950 50  0001 C CNN
+F 3 "~" H 4200 4100 50  0001 C CNN
+	1    4200 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C71
+U 1 1 60F4F112
+P 3050 4750
+F 0 "C71" H 3168 4796 50  0000 L CNN
+F 1 "470uF 25V" H 3168 4705 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_10x10" H 3088 4600 50  0001 C CNN
+F 3 "~" H 3050 4750 50  0001 C CNN
+	1    3050 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R66
+U 1 1 60F4FAF1
+P 2000 5850
+F 0 "R66" H 2068 5896 50  0000 L CNN
+F 1 "4R7" H 2068 5805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2040 5840 50  0001 C CNN
+F 3 "~" H 2000 5850 50  0001 C CNN
+	1    2000 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R67
+U 1 1 60F50588
+P 3850 5850
+F 0 "R67" H 3918 5896 50  0000 L CNN
+F 1 "4R7" H 3918 5805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3890 5840 50  0001 C CNN
+F 3 "~" H 3850 5850 50  0001 C CNN
+	1    3850 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R71
+U 1 1 60F508D3
+P 8850 3750
+F 0 "R71" V 8645 3750 50  0000 C CNN
+F 1 "1K" V 8736 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8890 3740 50  0001 C CNN
+F 3 "~" H 8850 3750 50  0001 C CNN
+	1    8850 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R73
+U 1 1 60F50C54
+P 8850 4050
+F 0 "R73" V 8645 4050 50  0000 C CNN
+F 1 "1K" V 8736 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8890 4040 50  0001 C CNN
+F 3 "~" H 8850 4050 50  0001 C CNN
+	1    8850 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R69
+U 1 1 60F50F79
+P 7100 4550
+F 0 "R69" H 7168 4596 50  0000 L CNN
+F 1 "10K" H 7168 4505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7140 4540 50  0001 C CNN
+F 3 "~" H 7100 4550 50  0001 C CNN
+	1    7100 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R70
+U 1 1 60F5116C
+P 7550 4550
+F 0 "R70" H 7618 4596 50  0000 L CNN
+F 1 "10K" H 7618 4505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7590 4540 50  0001 C CNN
+F 3 "~" H 7550 4550 50  0001 C CNN
+	1    7550 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3650 4550 3650
+Wire Wire Line
+	4550 3650 4550 3400
+Wire Wire Line
+	4550 3400 4400 3400
+Wire Wire Line
+	4850 3950 4700 3950
+Wire Wire Line
+	4700 3950 4700 4650
+Wire Wire Line
+	4850 3850 4500 3850
+Wire Wire Line
+	4500 3850 4500 4100
+Wire Wire Line
+	4500 4100 4350 4100
+Wire Wire Line
+	3050 4600 3050 3750
+Connection ~ 3050 3750
+Wire Wire Line
+	3050 3750 2900 3750
+Wire Wire Line
+	3400 4600 3400 3750
+Wire Wire Line
+	3050 3750 3400 3750
+Connection ~ 3400 3750
+Wire Wire Line
+	3400 3750 4850 3750
+Wire Wire Line
+	3050 4900 3050 5200
+Wire Wire Line
+	3400 4900 3400 5200
+Wire Wire Line
+	3400 5200 3050 5200
+Connection ~ 3050 5200
+Wire Wire Line
+	3050 5200 3050 5300
+Wire Wire Line
+	2000 6000 2000 6200
+Wire Wire Line
+	2000 5300 2000 5700
+Wire Wire Line
+	4100 3400 2000 3400
+Wire Wire Line
+	2000 5000 2000 3400
+Connection ~ 2000 3400
+Wire Wire Line
+	2000 3400 1300 3400
+Text HLabel 1300 3400 0    50   Input ~ 0
+DAC1_OUT
+Wire Wire Line
+	3850 6000 3850 6200
+Wire Wire Line
+	3850 5700 3850 5400
+Wire Wire Line
+	4050 4100 3850 4100
+Wire Wire Line
+	3850 4100 3850 5100
+Wire Wire Line
+	3850 4100 3700 4100
+Connection ~ 3850 4100
+Text HLabel 3700 4100 0    50   Input ~ 0
+DAC2_OUT
+Wire Wire Line
+	6850 3650 7400 3650
+Wire Wire Line
+	7400 3650 7400 2950
+Wire Wire Line
+	7400 2650 7400 2200
+Wire Wire Line
+	6850 3950 8250 3950
+Wire Wire Line
+	8250 3950 8250 2950
+Wire Wire Line
+	8250 2650 8250 2200
+Wire Wire Line
+	6850 3850 7100 3850
+Wire Wire Line
+	7100 3850 7100 4050
+Wire Wire Line
+	7100 4700 7100 4900
+Wire Wire Line
+	8700 3750 7550 3750
+Wire Wire Line
+	7550 4400 7550 3750
+Connection ~ 7550 3750
+Wire Wire Line
+	7550 3750 6850 3750
+Wire Wire Line
+	9000 3750 9250 3750
+Text HLabel 9250 3750 2    50   Input ~ 0
+DAC1
+Wire Wire Line
+	8700 4050 7100 4050
+Connection ~ 7100 4050
+Wire Wire Line
+	7100 4050 7100 4400
+Wire Wire Line
+	9000 4050 9250 4050
+Text HLabel 9250 4050 2    50   Input ~ 0
+DAC2
+Wire Wire Line
+	7550 4700 7550 4900
+Text HLabel 7400 2200 0    50   Input ~ 0
+GND
+Text HLabel 8250 2200 0    50   Input ~ 0
+GND
+Text HLabel 7100 4900 0    50   Input ~ 0
+GND
+Text HLabel 7550 4900 0    50   Input ~ 0
+GND
+Text HLabel 4700 4650 0    50   Input ~ 0
+GND
+Text HLabel 3850 6200 0    50   Input ~ 0
+GND
+Text HLabel 3050 5300 0    50   Input ~ 0
+GND
+Text HLabel 2000 6200 0    50   Input ~ 0
+GND
+Text HLabel 2900 3750 0    50   Input ~ 0
+12Vcc
+$EndSCHEMATC
