@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 50
+Sheet 2 52
 Title ""
 Date ""
 Rev ""
@@ -21,7 +21,7 @@ AR Path="/6042DFA9" Ref="IC?"  Part="1"
 AR Path="/6041D9CE/6042DFA9" Ref="IC1"  Part="1" 
 F 0 "IC1" H 4750 2465 50  0000 C CNN
 F 1 "XL1509-5.0E1" H 4750 2374 50  0000 C CNN
-F 2 "SOIC127P600X175-8N" H 5100 2300 50  0001 L CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 5100 2300 50  0001 L CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/XLSEMI-XL1509-5-0E1_C61063.pdf" H 5100 2200 50  0001 L CNN
 F 4 "2A 150KHz 40V Buck DC to DC Converter." H 5100 2100 50  0001 L CNN "Description"
 F 5 "1.75" H 5100 2000 50  0001 L CNN "Height"
@@ -40,7 +40,7 @@ AR Path="/6042DFBB" Ref="L?"  Part="1"
 AR Path="/6041D9CE/6042DFBB" Ref="L1"  Part="1" 
 F 0 "L1" H 7050 2225 50  0000 C CNN
 F 1 "SWRB1207S-680MT" H 7050 2134 50  0000 C CNN
-F 2 "INDPM125125X800N" H 7300 2050 50  0001 L CNN
+F 2 "Inductor_SMD:L_12x12mm_H6mm" H 7300 2050 50  0001 L CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Sunlord-SWRB1207S-680MT_C169377.pdf" H 7300 1950 50  0001 L CNN
 F 4 "Power Inductors 68uH +/-20% 2.1A SMD,12.5x12.5x8mm(max) RoHS" H 7300 1850 50  0001 L CNN "Description"
 F 5 "8" H 7300 1750 50  0001 L CNN "Height"

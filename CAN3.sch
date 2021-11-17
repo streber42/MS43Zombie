@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 34 50
+Sheet 31 49
 Title ""
 Date ""
 Rev ""
@@ -19,7 +19,7 @@ U 1 1 60DE64B4
 P 5050 3400
 F 0 "IC18" H 6394 3096 50  0000 L CNN
 F 1 "MCP25625T-E_ML" H 6394 3005 50  0000 L CNN
-F 2 "QFN65P600X600X100-29N-D" H 6200 3900 50  0001 L CNN
+F 2 "Package_SO:SSOP-28_3.9x9.9mm_P0.635mm" H 6200 3900 50  0001 L CNN
 F 3 "" H 6200 3800 50  0001 L CNN
 F 4 "Microchip Technology MCP25625T-E/ML, CAN Controller 1Mbit/s CAN 2.0B, 28-Pin QFN" H 6200 3700 50  0001 L CNN "Description"
 F 5 "1" H 6200 3600 50  0001 L CNN "Height"
@@ -52,85 +52,15 @@ Wire Wire Line
 	4950 4050 4600 4050
 NoConn ~ 5050 3900
 NoConn ~ 5050 4000
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 60DE88B5
-P 4450 3900
-F 0 "JP3" H 4450 4105 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 4450 4014 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 4450 3900 50  0001 C CNN
-F 3 "~" H 4450 3900 50  0001 C CNN
-	1    4450 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP4
-U 1 1 60DE8F55
-P 4450 4050
-F 0 "JP4" H 4450 4255 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 4450 4164 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 4450 4050 50  0001 C CNN
-F 3 "~" H 4450 4050 50  0001 C CNN
-	1    4450 4050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 3900 3950 3900
-Wire Wire Line
-	4300 4050 3950 4050
 NoConn ~ 5350 4800
 NoConn ~ 5450 4800
-Wire Wire Line
-	5550 4800 5550 5000
-Wire Wire Line
-	5550 5000 5300 5000
 Wire Wire Line
 	5650 4800 5650 5150
 Wire Wire Line
 	5650 5150 5400 5150
-Wire Wire Line
-	5750 4800 5750 5100
-Wire Wire Line
-	5750 5100 6400 5100
-Wire Wire Line
-	5850 4800 5850 4950
-Wire Wire Line
-	5850 4950 6400 4950
 NoConn ~ 5950 4800
-$Comp
-L Jumper:SolderJumper_2_Open JP7
-U 1 1 60DEAE2E
-P 6550 4950
-F 0 "JP7" H 6550 5155 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 6550 5064 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 6550 4950 50  0001 C CNN
-F 3 "~" H 6550 4950 50  0001 C CNN
-	1    6550 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP8
-U 1 1 60DEB7B0
-P 6550 5100
-F 0 "JP8" H 6550 5305 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 6550 5214 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 6550 5100 50  0001 C CNN
-F 3 "~" H 6550 5100 50  0001 C CNN
-	1    6550 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6700 4950 7050 4950
-Text HLabel 7050 4950 2    50   Input ~ 0
-CAN_EXT3H
-Wire Wire Line
-	6700 5100 7050 5100
-Text HLabel 7050 5100 2    50   Input ~ 0
-CAN_EXT3L
 Wire Wire Line
 	6350 4000 6750 4000
-Wire Wire Line
-	6350 3900 6750 3900
 Text HLabel 6750 4000 2    50   Input ~ 0
 CAN3_SBY
 NoConn ~ 6350 3800
@@ -144,7 +74,7 @@ U 1 1 60DEF295
 P 7300 3050
 F 0 "Y2" H 8100 3315 50  0000 C CNN
 F 1 "X322516MLB4SI" H 8100 3224 50  0000 C CNN
-F 2 "X322516MLB4SI" H 8750 3150 50  0001 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 8750 3150 50  0001 L CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Yangxing-Tech-X322516MLB4SI_C13738.pdf" H 8750 3050 50  0001 L CNN
 F 4 "Crystal" H 8750 2950 50  0001 L CNN "Description"
 F 5 "0.8" H 8750 2850 50  0001 L CNN "Height"
@@ -210,55 +140,6 @@ Wire Wire Line
 Text HLabel 6050 1750 2    50   Input ~ 0
 SPI2_MISO
 $Comp
-L Jumper:SolderJumper_2_Open JP11
-U 1 1 60DFA4F4
-P 9150 950
-F 0 "JP11" H 9150 1155 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 9150 1064 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 9150 950 50  0001 C CNN
-F 3 "~" H 9150 950 50  0001 C CNN
-	1    9150 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP12
-U 1 1 60DFAFE1
-P 9150 1550
-F 0 "JP12" H 9150 1755 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 9150 1664 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 9150 1550 50  0001 C CNN
-F 3 "~" H 9150 1550 50  0001 C CNN
-	1    9150 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R65
-U 1 1 60DFB76F
-P 9950 1200
-F 0 "R65" H 10018 1246 50  0000 L CNN
-F 1 "120R" H 10018 1155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 9990 1190 50  0001 C CNN
-F 3 "~" H 9950 1200 50  0001 C CNN
-	1    9950 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9300 950  9950 950 
-Wire Wire Line
-	9950 950  9950 1050
-Wire Wire Line
-	9300 1550 9950 1550
-Wire Wire Line
-	9950 1550 9950 1350
-Wire Wire Line
-	9000 1550 8750 1550
-Wire Wire Line
-	9000 950  8750 950 
-Text HLabel 8750 950  0    50   Input ~ 0
-CAN_EXT3H
-Text HLabel 8750 1550 0    50   Input ~ 0
-CAN_EXT3L
-$Comp
 L Device:CP1 C26
 U 1 1 60DFF96D
 P 1100 1900
@@ -289,222 +170,12 @@ Wire Wire Line
 Wire Wire Line
 	1100 3050 1100 2800
 $Comp
-L SamacSys_Parts:TJA1055T_3_C,518 IC17
-U 1 1 60E05A7C
-P 3050 5700
-F 0 "IC17" H 3650 5965 50  0000 C CNN
-F 1 "TJA1055T_3_C,518" H 3650 5874 50  0000 C CNN
-F 2 "SOIC127P600X175-14N" H 4100 5800 50  0001 L CNN
-F 3 "http://www.nxp.com/docs/en/data-sheet/TJA1055.pdf" H 4100 5700 50  0001 L CNN
-F 4 "CAN Interface IC FAULT-TOLERANT" H 4100 5600 50  0001 L CNN "Description"
-F 5 "1.75" H 4100 5500 50  0001 L CNN "Height"
-F 6 "771-TJA1055T3C518" H 4100 5400 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/NXP-Semiconductors/TJA1055T-3-C518?qs=LOCUfHb8d9tDs3I%2F576cLg%3D%3D" H 4100 5300 50  0001 L CNN "Mouser Price/Stock"
-F 8 "NXP" H 4100 5200 50  0001 L CNN "Manufacturer_Name"
-F 9 "TJA1055T/3/C,518" H 4100 5100 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3050 5700
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3050 5700
-NoConn ~ 3050 6000
-NoConn ~ 3050 6300
-$Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 60E0E13F
-P 2500 5800
-F 0 "JP1" H 2500 6005 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 2500 5914 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2500 5800 50  0001 C CNN
-F 3 "~" H 2500 5800 50  0001 C CNN
-	1    2500 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP2
-U 1 1 60E0E45C
-P 2500 6050
-F 0 "JP2" H 2500 6255 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 2500 6164 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2500 6050 50  0001 C CNN
-F 3 "~" H 2500 6050 50  0001 C CNN
-	1    2500 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R55
-U 1 1 60E0E8E8
-P 2200 5350
-F 0 "R55" V 1995 5350 50  0000 C CNN
-F 1 "2K7" V 2086 5350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2240 5340 50  0001 C CNN
-F 3 "~" H 2200 5350 50  0001 C CNN
-	1    2200 5350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R57
-U 1 1 60E0EDE8
-P 4600 6300
-F 0 "R57" V 4395 6300 50  0000 C CNN
-F 1 "1K" V 4486 6300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4640 6290 50  0001 C CNN
-F 3 "~" H 4600 6300 50  0001 C CNN
-	1    4600 6300
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R58
-U 1 1 60E0F537
-P 4600 6500
-F 0 "R58" V 4395 6500 50  0000 C CNN
-F 1 "1K" V 4486 6500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4640 6490 50  0001 C CNN
-F 3 "~" H 4600 6500 50  0001 C CNN
-	1    4600 6500
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R59
-U 1 1 60E0F9BE
-P 4650 5550
-F 0 "R59" V 4445 5550 50  0000 C CNN
-F 1 "1K" V 4536 5550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4690 5540 50  0001 C CNN
-F 3 "~" H 4650 5550 50  0001 C CNN
-	1    4650 5550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:CP1 C45
-U 1 1 60E0FF29
-P 3650 4950
-F 0 "C45" H 3765 4996 50  0000 L CNN
-F 1 "10nF" H 3765 4905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3650 4950 50  0001 C CNN
-F 3 "~" H 3650 4950 50  0001 C CNN
-	1    3650 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP5
-U 1 1 60E105D3
-P 5550 5900
-F 0 "JP5" H 5550 6105 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 5550 6014 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 5550 5900 50  0001 C CNN
-F 3 "~" H 5550 5900 50  0001 C CNN
-	1    5550 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP6
-U 1 1 60E11035
-P 5550 6050
-F 0 "JP6" H 5550 6255 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 5550 6164 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 5550 6050 50  0001 C CNN
-F 3 "~" H 5550 6050 50  0001 C CNN
-	1    5550 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3050 5800 2650 5800
-Wire Wire Line
-	2350 5800 2150 5800
-Wire Wire Line
-	1650 5350 2050 5350
-Wire Wire Line
-	2350 5350 2750 5350
-Wire Wire Line
-	2750 5350 2750 5900
-Wire Wire Line
-	2750 5900 3050 5900
-Wire Wire Line
-	2750 5900 2750 6050
-Wire Wire Line
-	2750 6050 2650 6050
-Connection ~ 2750 5900
-Wire Wire Line
-	2350 6050 2150 6050
-Wire Wire Line
-	3050 6200 2900 6200
-Wire Wire Line
-	3050 6100 2900 6100
-Wire Wire Line
-	2900 6100 2900 6200
-Connection ~ 2900 6200
-Wire Wire Line
-	2900 6200 2700 6200
-Wire Wire Line
-	5050 5450 5050 5550
-Wire Wire Line
-	5050 5550 4800 5550
-Wire Wire Line
-	4250 5700 4500 5700
-Wire Wire Line
-	4500 5700 4500 5550
-Wire Wire Line
-	4500 5550 4500 5250
-Wire Wire Line
-	4500 5250 3650 5250
-Wire Wire Line
-	3650 5250 3650 5100
-Connection ~ 4500 5550
-Wire Wire Line
-	3650 4550 3650 4800
-Wire Wire Line
-	4250 5800 5300 5800
-Wire Wire Line
-	5300 5800 5300 5450
-Wire Wire Line
-	4250 5900 4900 5900
-Wire Wire Line
-	4250 6000 5000 6000
-Wire Wire Line
-	5400 6000 5400 6050
-Wire Wire Line
-	5700 5900 5950 5900
-Text HLabel 5950 5900 2    50   Input ~ 0
-CAN_EXT3L
-Wire Wire Line
-	5700 6050 5950 6050
-Text HLabel 5950 6050 2    50   Input ~ 0
-CAN_EXT3H
-Wire Wire Line
-	4600 6100 4250 6100
-Wire Wire Line
-	4400 6200 4400 6300
-Wire Wire Line
-	4400 6300 4450 6300
-Wire Wire Line
-	4250 6200 4400 6200
-Wire Wire Line
-	4250 6300 4300 6300
-Wire Wire Line
-	4300 6300 4300 6500
-Wire Wire Line
-	4300 6500 4450 6500
-Wire Wire Line
-	4750 6300 4900 6300
-Wire Wire Line
-	4900 6300 4900 5900
-Connection ~ 4900 5900
-Wire Wire Line
-	4900 5900 5400 5900
-Wire Wire Line
-	4750 6500 5000 6500
-Wire Wire Line
-	5000 6500 5000 6000
-Connection ~ 5000 6000
-Wire Wire Line
-	5000 6000 5400 6000
-$Comp
 L SamacSys_Parts:NCV7356D1R2G IC19
 U 1 1 60E5AE28
 P 8150 5550
 F 0 "IC19" H 8750 5815 50  0000 C CNN
 F 1 "NCV7356D1R2G" H 8750 5724 50  0000 C CNN
-F 2 "SOIC127P600X175-8N" H 9200 5650 50  0001 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 9200 5650 50  0001 L CNN
 F 3 "http://www.onsemi.com/pub/Collateral/NCV7356-D.PDF" H 9200 5550 50  0001 L CNN
 F 4 "NCV7356D1R2G, ANA SINGLE WIRE CAN NCV7356D1R2G, ANA SINGLE WIRE CAN" H 9200 5450 50  0001 L CNN "Description"
 F 5 "1.75" H 9200 5350 50  0001 L CNN "Height"
@@ -513,39 +184,6 @@ F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NCV7356D1R2G?qs=8sO
 F 8 "ON Semiconductor" H 9200 5050 50  0001 L CNN "Manufacturer_Name"
 F 9 "NCV7356D1R2G" H 9200 4950 50  0001 L CNN "Manufacturer_Part_Number"
 	1    8150 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP9
-U 1 1 60E5D418
-P 7700 5550
-F 0 "JP9" H 7700 5755 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 7700 5664 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 7700 5550 50  0001 C CNN
-F 3 "~" H 7700 5550 50  0001 C CNN
-	1    7700 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP10
-U 1 1 60E5DABB
-P 7700 5850
-F 0 "JP10" H 7700 6055 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 7700 5964 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 7700 5850 50  0001 C CNN
-F 3 "~" H 7700 5850 50  0001 C CNN
-	1    7700 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP13
-U 1 1 60E5E12C
-P 10450 5650
-F 0 "JP13" H 10450 5855 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 10450 5764 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 10450 5650 50  0001 C CNN
-F 3 "~" H 10450 5650 50  0001 C CNN
-	1    10450 5650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -610,8 +248,6 @@ Wire Wire Line
 Wire Wire Line
 	8150 5550 7850 5550
 Wire Wire Line
-	7550 5550 7350 5550
-Wire Wire Line
 	8150 5850 8000 5850
 Wire Wire Line
 	8000 5850 8000 6250
@@ -625,8 +261,6 @@ Wire Wire Line
 Wire Wire Line
 	6900 6250 6900 6200
 Wire Wire Line
-	7550 5850 7350 5850
-Wire Wire Line
 	8150 5650 8050 5650
 Text HLabel 8050 5650 0    50   Input ~ 0
 SW_MODE0
@@ -638,8 +272,6 @@ Wire Wire Line
 	9350 5650 9550 5650
 Wire Wire Line
 	9950 5650 10100 5650
-Wire Wire Line
-	10600 5650 10800 5650
 Text HLabel 10800 5650 2    50   Input ~ 0
 CAN_EXT3H
 Wire Wire Line
@@ -661,8 +293,6 @@ Connection ~ 10100 5350
 Wire Wire Line
 	10100 5350 10300 5350
 Connection ~ 10100 5650
-Wire Wire Line
-	10100 5650 10300 5650
 Wire Wire Line
 	9350 5750 9550 5750
 Wire Wire Line
@@ -729,25 +359,13 @@ Wire Wire Line
 	10650 3650 10650 3850
 Wire Wire Line
 	10650 3350 10650 3100
-Text Label 6750 3900 0    50   ~ 0
-TXCAN_HS
-Text Label 3950 3900 2    50   ~ 0
-TXCAN_HS
-Text Label 3950 4050 2    50   ~ 0
-RXCAN_HS
-Text Label 5300 5000 2    50   ~ 0
-RXCAN_HS
 Text Label 4850 3700 2    50   ~ 0
 TXCAN
 Text Label 4800 4050 3    50   ~ 0
 RXCAN
-Text Label 2150 5800 2    50   ~ 0
+Text Label 7850 5550 2    50   ~ 0
 TXCAN
-Text Label 2150 6050 2    50   ~ 0
-RXCAN
-Text Label 7350 5550 2    50   ~ 0
-TXCAN
-Text Label 7350 5850 2    50   ~ 0
+Text Label 7850 5850 2    50   ~ 0
 RXCAN
 Text HLabel 1100 1500 0    50   Input ~ 0
 3_3Vcc
@@ -757,18 +375,6 @@ Text HLabel 1100 2250 0    50   Input ~ 0
 GND
 Text HLabel 1100 3550 0    50   Input ~ 0
 GND
-Text HLabel 1650 5350 0    50   Input ~ 0
-5Vcc
-Text HLabel 2700 6200 0    50   Input ~ 0
-5Vcc
-Text HLabel 3650 4550 0    50   Input ~ 0
-GND
-Text HLabel 5050 5450 0    50   Input ~ 0
-12Vcc
-Text HLabel 5300 5450 0    50   Input ~ 0
-GND
-Text HLabel 4600 6100 2    50   Input ~ 0
-5Vcc
 Text HLabel 6900 6200 0    50   Input ~ 0
 5Vcc
 Text HLabel 9450 5250 0    50   Input ~ 0
@@ -812,4 +418,10 @@ F 3 "~" H 10350 6050 50  0001 C CNN
 	1    10350 6050
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	10100 5650 10800 5650
+NoConn ~ 6350 3900
+NoConn ~ 5550 4800
+NoConn ~ 5750 4800
+NoConn ~ 5850 4800
 $EndSCHEMATC

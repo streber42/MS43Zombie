@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 35 50
+Sheet 32 50
 Title ""
 Date ""
 Rev ""
@@ -19,7 +19,7 @@ U 1 1 60F16396
 P 4950 3650
 F 0 "IC20" H 5650 3915 50  0000 C CNN
 F 1 "MAX3221ECPWR" H 5650 3824 50  0000 C CNN
-F 2 "SOP65P640X120-16N" H 6200 3750 50  0001 L CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 6200 3750 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/max3221e" H 6200 3650 50  0001 L CNN
 F 4 "3-V to 5.5-V Single-Channel RS-232 Line Driver/Receiver" H 6200 3550 50  0001 L CNN "Description"
 F 5 "1.2" H 6200 3450 50  0001 L CNN "Height"

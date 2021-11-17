@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 21 50
+Sheet 18 37
 Title ""
 Date ""
 Rev ""
@@ -143,11 +143,9 @@ Connection ~ 5800 5300
 Wire Wire Line
 	4700 2600 4700 2200
 Wire Wire Line
-	4700 2200 6750 2200
-Wire Wire Line
 	6750 2200 6750 2550
 Wire Wire Line
-	5850 2600 5850 1800
+	5850 2600 5850 2200
 Wire Wire Line
 	4700 3150 4050 3150
 Connection ~ 4700 3150
@@ -198,4 +196,11 @@ Text HLabel 5850 1800 0    50   Input ~ 0
 3_3Vcc
 Text HLabel 5800 5600 0    50   Input ~ 0
 GND
+Wire Wire Line
+	4700 2200 5850 2200
+Connection ~ 5850 2200
+Wire Wire Line
+	5850 2200 5850 1800
+Wire Wire Line
+	5850 2200 6750 2200
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 41 50
+Sheet 41 51
 Title ""
 Date ""
 Rev ""
@@ -19,7 +19,7 @@ U 1 1 60F4C755
 P 4850 3650
 F 0 "IC26" H 5850 3915 50  0000 C CNN
 F 1 "TDA2822D013TR" H 5850 3824 50  0000 C CNN
-F 2 "SOIC127P600X175-8N" H 6700 3750 50  0001 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6700 3750 50  0001 L CNN
 F 3 "https://www.st.com/resource/en/datasheet/tda2822d.pdf" H 6700 3650 50  0001 L CNN
 F 4 "STMICROELECTRONICS - TDA2822D013TR - Audio Power Amplifier, 300 mW, AB, 2 Channel, 1.8V to 15V, SOIC, 8 Pins" H 6700 3550 50  0001 L CNN "Description"
 F 5 "1.75" H 6700 3450 50  0001 L CNN "Height"
