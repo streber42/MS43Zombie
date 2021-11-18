@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 22 37
+Sheet 10 36
 Title ""
 Date ""
 Rev ""
@@ -30,7 +30,7 @@ AR Path="/60DB3737/60450D7B" Ref="IC15"  Part="1"
 AR Path="/60DB6C41/60450D7B" Ref="IC16"  Part="1" 
 AR Path="/61F2054A/60450D7B" Ref="IC27"  Part="1" 
 AR Path="/6244D324/60450D7B" Ref="IC1"  Part="1" 
-F 0 "IC14" H 5650 3815 50  0000 C CNN
+F 0 "IC1" H 5650 3815 50  0000 C CNN
 F 1 "NCV8402ASTT1G" H 5650 3724 50  0000 C CNN
 F 2 "SamacSys_Parts:SOT230P700X175-4N" H 6000 3650 50  0001 L CNN
 F 3 "http://www.onsemi.com/pub/Collateral/NCV8402-D.PDF" H 6000 3550 50  0001 L CNN

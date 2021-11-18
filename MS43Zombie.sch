@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 37
+Sheet 1 36
 Title ""
 Date ""
 Rev ""
@@ -61,7 +61,7 @@ Text Label 1750 1500 2    50   ~ 0
 A8680
 NoConn ~ 2750 6700
 NoConn ~ 1750 900 
-Text Label 350  6000 2    50   ~ 0
+Text Label 4000 2600 0    50   ~ 0
 OIL_PUMP_POWER
 Wire Wire Line
 	2250 8300 2350 8300
@@ -368,10 +368,10 @@ Text Label 12900 3400 0    50   ~ 0
 CAN_EXT2-
 Text Label 12900 3150 0    50   ~ 0
 CAN_EXT2+
-Text Label 7100 5950 2    50   ~ 0
-USART1_TX
-Text Label 7600 5850 0    50   ~ 0
-USART1_RX
+Text Label 6650 5950 2    50   ~ 0
+UART4_TX
+Text Label 8050 5850 0    50   ~ 0
+UART4_RX
 Text Label 4300 2300 2    50   ~ 0
 UART3_TX
 Text Label 4300 2400 2    50   ~ 0
@@ -421,9 +421,9 @@ GEAR3
 Text Label 5400 4050 0    50   ~ 0
 PC0
 Text Label 5300 6900 0    50   ~ 0
-PC5
+MG1_TEMP_IN
 Text Label 5300 6250 0    50   ~ 0
-PC4
+MG2_TEMP_IN
 Text Label 7100 6350 2    50   ~ 0
 PC0
 Text Label 7600 6250 0    50   ~ 0
@@ -486,7 +486,7 @@ Text Label 7600 5950 0    50   ~ 0
 SL1-
 Text Label 7600 4000 0    50   ~ 0
 UART3_TX
-Text Label 7600 6350 0    50   ~ 0
+Text Label 8150 4400 0    50   ~ 0
 INV_POWER
 Text Label 7100 5350 2    50   ~ 0
 RESET
@@ -637,23 +637,10 @@ Text Label 1750 1900 2    50   ~ 0
 GearboxCAN-
 Text Label 1750 2000 2    50   ~ 0
 GearboxCAN+
-$Comp
-L Device:Fuse F4
-U 1 1 60535ADD
-P 1100 8550
-F 0 "F4" H 1160 8596 50  0000 L CNN
-F 1 "30A" H 1160 8505 50  0000 L CNN
-F 2 "" V 1030 8550 50  0001 C CNN
-F 3 "~" H 1100 8550 50  0001 C CNN
-	1    1100 8550
-	1    0    0    -1  
-$EndComp
 Text Label 1100 8400 2    50   ~ 0
 Terminal87
 Text Label 1100 8850 2    50   ~ 0
 X6962
-Wire Wire Line
-	1100 8700 1100 9000
 $Comp
 L Connector_Generic:Conn_01x04 J6
 U 1 1 6053B56B
@@ -768,9 +755,9 @@ $EndSheet
 Wire Wire Line
 	4500 5200 4350 5200
 Text Label 5400 5200 0    50   ~ 0
-PC2
-Text Label 4350 5200 2    50   ~ 0
 CoolantTempIn
+Text Label 4350 5200 2    50   ~ 0
+CoolantOutputTempSignal
 $Sheet
 S 12350 8500 1150 600 
 U 60D79E58
@@ -792,12 +779,12 @@ LIN_WAKE
 Text Label 12350 8800 2    50   ~ 0
 LIN_NSLP
 Text Label 13500 8600 0    50   ~ 0
-USART1_TX
+UART4_TX
 Text Label 13500 8700 0    50   ~ 0
-USART1_RX
-Text Label 7600 4400 0    50   ~ 0
+UART4_RX
+Text Label 6700 6550 2    50   ~ 0
 LIN_WAKE
-Text Label 7100 4500 2    50   ~ 0
+Text Label 8050 6550 0    50   ~ 0
 LIN_NSLP
 Text Label 10700 4100 0    50   ~ 0
 OIL_PUMP_PWM
@@ -826,54 +813,24 @@ Text Label 7600 6650 0    50   ~ 0
 FOR_IN
 Text Label 7600 5650 0    50   ~ 0
 T15_IN
-Text Label 7100 5750 2    50   ~ 0
+Text Label 6650 5650 2    50   ~ 0
 START_IN
 Text Label 7100 5850 2    50   ~ 0
 REV_IN
-Text Label 7600 5450 0    50   ~ 0
-POT2_CS
-Text Label 7100 5550 2    50   ~ 0
-POT1_CS
 $Sheet
 S 6550 9400 750  450 
 U 60F3839B
 F0 "Digital Pot" 50
 F1 "DigitalPot.sch" 50
-F2 "POT_OUT" I R 7300 9500 50 
-F3 "POT_CS" I L 6550 9500 50 
-F4 "SPI3_MOSI" I L 6550 9700 50 
-F5 "SPI3_SCK" I L 6550 9600 50 
-F6 "3_3Vcc" I L 6550 9800 50 
-F7 "GND" I R 7300 9800 50 
+F2 "3_3Vcc" I L 6550 9800 50 
+F3 "GND" I L 6550 9500 50 
+F4 "SCL" I L 6550 9700 50 
+F5 "SDA" I L 6550 9600 50 
+F6 "A1" I R 7300 9500 50 
+F7 "W2" I R 7300 9800 50 
+F8 "W1" I R 7300 9600 50 
+F9 "A2" I R 7300 9700 50 
 $EndSheet
-$Sheet
-S 6550 10050 750  450 
-U 60F3F96F
-F0 "sheet60F3F969" 50
-F1 "DigitalPot.sch" 50
-F2 "POT_OUT" I R 7300 10150 50 
-F3 "POT_CS" I L 6550 10150 50 
-F4 "SPI3_MOSI" I L 6550 10350 50 
-F5 "SPI3_SCK" I L 6550 10250 50 
-F6 "3_3Vcc" I L 6550 10450 50 
-F7 "GND" I R 7300 10450 50 
-$EndSheet
-Text Label 6550 9500 2    50   ~ 0
-POT1_CS
-Text Label 6550 9600 2    50   ~ 0
-SPI3_SCK
-Text Label 6550 9700 2    50   ~ 0
-SPI3_MOSI
-Text Label 7300 9500 0    50   ~ 0
-POT1_OUT
-Text Label 6550 10150 2    50   ~ 0
-POT2_CS
-Text Label 6550 10250 2    50   ~ 0
-SPI3_SCK
-Text Label 6550 10350 2    50   ~ 0
-SPI3_MOSI
-Text Label 7300 10150 0    50   ~ 0
-POT2_OUT
 Text Label 7100 6150 2    50   ~ 0
 PC4
 Text Label 7600 6050 0    50   ~ 0
@@ -900,17 +857,6 @@ Wire Wire Line
 	12750 3400 13450 3400
 Wire Wire Line
 	12750 3150 13450 3150
-$Comp
-L Device:Fuse F2
-U 1 1 60FDC117
-P 1450 8550
-F 0 "F2" H 1510 8596 50  0000 L CNN
-F 1 "20A" H 1510 8505 50  0000 L CNN
-F 2 "" V 1380 8550 50  0001 C CNN
-F 3 "~" H 1450 8550 50  0001 C CNN
-	1    1450 8550
-	1    0    0    -1  
-$EndComp
 Text Label 1450 8400 0    50   ~ 0
 Terminal87
 Text Label 1450 8700 0    50   ~ 0
@@ -934,8 +880,6 @@ Wire Wire Line
 NoConn ~ 2750 5100
 NoConn ~ 2750 5300
 NoConn ~ 2750 5700
-NoConn ~ 2750 6100
-NoConn ~ 2750 6200
 NoConn ~ 2750 6400
 NoConn ~ 2750 6500
 NoConn ~ 2750 6600
@@ -947,14 +891,6 @@ Text Notes 0    4400 2    50   ~ 0
 Inverter
 Text Label 3900 1800 0    50   ~ 0
 CLK+
-Text Label 4200 1200 0    50   ~ 0
-REQ+
-Text Label 4200 1100 0    50   ~ 0
-REQ-
-Text Label 4200 1400 0    50   ~ 0
-HTM+
-Text Label 4200 1300 0    50   ~ 0
-HTM-
 Wire Wire Line
 	350  4100 1750 4100
 Wire Wire Line
@@ -987,13 +923,13 @@ Text Label 3900 1900 0    50   ~ 0
 TRANS_SL2-
 Text Label 3900 2000 0    50   ~ 0
 TRANS_SL1-
-Text Label 350  5500 2    50   ~ 0
-MG2_TEMP-
 Text Label 350  5600 2    50   ~ 0
+MG2_TEMP-
+Text Label 350  5500 2    50   ~ 0
 MG2_TEMP+
-Text Label 350  5700 2    50   ~ 0
-MG1_TEMP-
 Text Label 350  5800 2    50   ~ 0
+MG1_TEMP-
+Text Label 350  5700 2    50   ~ 0
 MG1_TEMP+
 Wire Notes Line
 	-400 4800 600  4800
@@ -1138,7 +1074,7 @@ Wire Wire Line
 Wire Wire Line
 	6550 7500 6400 7500
 Text Label 6400 7500 2    50   ~ 0
-12Vcc
+Terminal87
 Wire Wire Line
 	7800 7400 7650 7400
 $Sheet
@@ -1154,19 +1090,13 @@ $EndSheet
 Wire Wire Line
 	9450 4200 9300 4200
 Text Label 9300 4200 2    50   ~ 0
-12Vcc
+Terminal87
 Wire Wire Line
 	9450 4300 9300 4300
 Wire Wire Line
 	10700 4100 10550 4100
 Text Label 6550 9800 2    50   ~ 0
 3_3Vcc
-Text Label 7300 9800 0    50   ~ 0
-GND
-Text Label 6550 10450 2    50   ~ 0
-3_3Vcc
-Text Label 7300 10450 0    50   ~ 0
-GND
 Text Label 11900 2100 2    50   ~ 0
 3_3Vcc
 Wire Wire Line
@@ -1199,8 +1129,6 @@ Text Label 4350 3050 2    50   ~ 0
 3_3Vcc
 Text Label 12350 8950 2    50   ~ 0
 3_3Vcc
-Text Label 12350 9050 2    50   ~ 0
-12Vcc
 Text Label 2250 8300 1    50   ~ 0
 GND
 Text Label 7300 1650 0    50   ~ 0
@@ -1286,9 +1214,9 @@ Wire Wire Line
 Wire Wire Line
 	1750 6700 350  6700
 Text Label 2750 2300 0    50   ~ 0
-POT1_OUT
-Text Label 2750 2200 0    50   ~ 0
-POT2_OUT
+DigitalPotW1
+Text Label 3900 900  0    50   ~ 0
+DigitalPotA1
 Wire Wire Line
 	1750 6800 350  6800
 Wire Wire Line
@@ -1331,7 +1259,6 @@ Text Label 350  7500 2    50   ~ 0
 PWM2_OUT
 Text Label 350  7600 2    50   ~ 0
 PWM3_OUT
-NoConn ~ 2750 900 
 Text Label 2600 9350 0    50   ~ 0
 HeaterEnableOutput
 Text Label 2600 9550 0    50   ~ 0
@@ -1457,20 +1384,15 @@ Text Label 7600 3100 0    50   ~ 0
 WKUP
 Text Label 7600 5750 0    50   ~ 0
 RTC_TAMPER
-Text Label 7100 7050 2    50   ~ 0
-PE0
 Text Label 7600 6950 0    50   ~ 0
 PE1
 Text Label 7100 6950 2    50   ~ 0
 LED
 NoConn ~ 7600 5750
 NoConn ~ 7100 5350
-NoConn ~ 7600 6950
-NoConn ~ 7100 7050
 NoConn ~ 7600 3100
 NoConn ~ 7100 3100
 NoConn ~ 7100 3900
-NoConn ~ 7600 3500
 NoConn ~ 7600 4700
 NoConn ~ 7600 4800
 NoConn ~ 7100 4800
@@ -1512,40 +1434,15 @@ GND
 Text Label 13500 9600 0    50   ~ 0
 SignalACCompressorRelay
 Text Label 12150 9650 2    50   ~ 0
-PE12
+ACCompressorRelayDRV
 Wire Wire Line
 	2750 1700 3900 1700
 Wire Wire Line
 	3900 1800 2750 1800
-$Comp
-L SamacSys_Parts:7-967288-1 J1
-U 1 1 60393340
-P 1750 800
-F 0 "J1" H 2250 1065 50  0000 C CNN
-F 1 "7-967288-1" H 2250 974 50  0000 C CNN
-F 2 "SamacSys_Parts:79672881" H 2600 900 50  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F967288%7FF1%7Fpdf%7FGerman%7FGER_CD_967288_F1_967288-c.pdf%7F7-967288-1" H 2600 800 50  0001 L CNN
-F 4 "AMP - TE CONNECTIVITY - 7-967288-1 - AUTOMOTIVE CONN, PLUG, R/A, 134POS, PCB" H 2600 700 50  0001 L CNN "Description"
-F 5 "25.5" H 2600 600 50  0001 L CNN "Height"
-F 6 "571-7-967288-1" H 2600 500 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-AMP/7-967288-1/?qs=4GfDZFxiN8v4VyLYMsjm7g%3D%3D" H 2600 400 50  0001 L CNN "Mouser Price/Stock"
-F 8 "TE Connectivity" H 2600 300 50  0001 L CNN "Manufacturer_Name"
-F 9 "7-967288-1" H 2600 200 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1750 800 
-	1    0    0    -1  
-$EndComp
 NoConn ~ 350  4700
 NoConn ~ 350  4800
 NoConn ~ 350  4500
 NoConn ~ 350  4600
-Wire Wire Line
-	2750 1400 4200 1400
-Wire Wire Line
-	2750 1300 4200 1300
-Wire Wire Line
-	2750 1200 4200 1200
-Wire Wire Line
-	2750 1100 4200 1100
 Text Label 1750 2400 2    50   ~ 0
 ReverseLightRelay
 Text Label 2750 2800 0    50   ~ 0
@@ -1579,7 +1476,7 @@ $EndSheet
 Wire Wire Line
 	6550 7950 6400 7950
 Text Label 6400 7950 2    50   ~ 0
-12Vcc
+Terminal87
 Wire Wire Line
 	7800 7850 7650 7850
 Text Label 7650 7950 0    50   ~ 0
@@ -1601,7 +1498,7 @@ $EndSheet
 Wire Wire Line
 	6550 8400 6400 8400
 Text Label 6400 8400 2    50   ~ 0
-12Vcc
+Terminal87
 Wire Wire Line
 	7800 8300 7650 8300
 Text Label 7650 8400 0    50   ~ 0
@@ -1611,24 +1508,14 @@ NoConn ~ 350  6200
 NoConn ~ 350  6300
 NoConn ~ 350  4300
 NoConn ~ 350  4400
-NoConn ~ 7100 3400
-NoConn ~ 7600 3400
 NoConn ~ 7100 3600
 NoConn ~ 7600 3600
-NoConn ~ 7100 3700
 NoConn ~ 7600 4100
 NoConn ~ 7600 4200
 NoConn ~ 7600 4300
 NoConn ~ 7100 4200
 NoConn ~ 7100 4300
 NoConn ~ 7100 4400
-NoConn ~ 7600 5550
-NoConn ~ 7100 5650
-NoConn ~ 7600 6150
-NoConn ~ 7100 6450
-NoConn ~ 7100 6550
-NoConn ~ 7600 6450
-NoConn ~ 7600 6550
 NoConn ~ 350  6400
 NoConn ~ 350  6500
 NoConn ~ 350  6800
@@ -1640,10 +1527,6 @@ NoConn ~ 350  7300
 NoConn ~ 350  7400
 NoConn ~ 350  7500
 NoConn ~ 350  7600
-NoConn ~ 7100 4600
-NoConn ~ 7600 4600
-NoConn ~ 7100 4700
-NoConn ~ 1750 1400
 $Sheet
 S 9450 9650 850  350 
 U 6244D324
@@ -1728,19 +1611,208 @@ NoConn ~ 3200 -1150
 NoConn ~ 1400 3000
 Wire Wire Line
 	3900 2000 2750 2000
-NoConn ~ 2750 1000
-Wire Wire Line
-	4200 1500 2750 1500
-Wire Wire Line
-	2750 1600 4200 1600
-Text Label 4200 1500 0    50   ~ 0
-MTH-
-Text Label 4200 1600 0    50   ~ 0
-MTH+
 Text Label 3900 1700 0    50   ~ 0
 CLK-
 Wire Wire Line
 	3900 1900 2750 1900
 Wire Wire Line
 	3900 2100 2750 2100
+$Comp
+L SamacSys_Parts:SS54B D1
+U 1 1 625A2FF4
+P 4750 9000
+F 0 "D1" H 5050 8733 50  0000 C CNN
+F 1 "SS54B" H 5050 8824 50  0000 C CNN
+F 2 "DIOM5336X244N" H 5200 9000 50  0001 L CNN
+F 3 "" H 5200 8900 50  0001 L CNN
+F 4 "HY Electronic Corp SS54B, SMT Rectifier Schottky Diode, 40V 5A, 2-Pin SMB" H 5200 8800 50  0001 L CNN "Description"
+F 5 "2.44" H 5200 8700 50  0001 L CNN "Height"
+F 6 "" H 5200 8600 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 5200 8500 50  0001 L CNN "Mouser Price/Stock"
+F 8 "HY Electronic Corp" H 5200 8400 50  0001 L CNN "Manufacturer_Name"
+F 9 "SS54B" H 5200 8300 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4750 9000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5350 9000 5550 9000
+Text Label 5550 9000 0    50   ~ 0
+A2076
+Wire Wire Line
+	4750 9000 4500 9000
+Text Label 4500 9000 2    50   ~ 0
+12Vcc
+NoConn ~ 350  6600
+NoConn ~ 350  4900
+NoConn ~ 350  5000
+NoConn ~ 350  5100
+NoConn ~ 1750 2200
+NoConn ~ 2750 5500
+Wire Wire Line
+	1450 8400 1450 8700
+Wire Wire Line
+	1100 8400 1100 8850
+Wire Wire Line
+	7100 3700 6650 3700
+Text Label 6650 3700 2    50   ~ 0
+COOLANT_PUMP_1
+Wire Wire Line
+	7600 6450 8050 6450
+Text Label 8100 3400 0    50   ~ 0
+ELECTRIC_FAN
+Wire Wire Line
+	7100 6450 6700 6450
+Text Label 6600 3400 2    50   ~ 0
+COOLANT_PUMP_2
+Wire Wire Line
+	7100 4700 6600 4700
+Text Label 6650 7050 2    50   ~ 0
+OIL_POWER
+Wire Wire Line
+	7600 4600 7950 4600
+Text Label 8100 6950 0    50   ~ 0
+FuelPumpRelayDRV
+Wire Wire Line
+	7100 4600 6600 4600
+Wire Wire Line
+	6600 4600 6600 4550
+Text Label 6600 4550 2    50   ~ 0
+ReverseRelayDRV
+Wire Wire Line
+	9450 10950 9300 10950
+Text Label 9300 10950 2    50   ~ 0
+FuelInjectorDRV
+Wire Wire Line
+	7100 5650 6650 5650
+Text Label 7100 5750 2    50   ~ 0
+USB_VBUS_ON
+NoConn ~ 7100 5750
+Wire Wire Line
+	7600 5550 8050 5550
+Text Label 8050 5550 0    50   ~ 0
+FuelInjectorDRV
+Wire Wire Line
+	7600 6150 8050 6150
+Text Label 8050 6150 0    50   ~ 0
+CoolantTempIn
+Text Label 12350 9050 2    50   ~ 0
+IGNITION_T15
+Text Label 7600 5850 0    50   ~ 0
+PC11
+Text Label 7100 5950 2    50   ~ 0
+PC10
+Wire Wire Line
+	6650 5950 7100 5950
+Wire Wire Line
+	8050 5850 7600 5850
+Wire Wire Line
+	8050 6550 7600 6550
+Wire Wire Line
+	7100 6550 6700 6550
+Text Label 7600 4400 0    50   ~ 0
+PD10
+Text Label 7100 4500 2    50   ~ 0
+PD11
+NoConn ~ 7100 4500
+Wire Wire Line
+	8100 6950 7600 6950
+NoConn ~ 7950 4600
+Wire Wire Line
+	7100 3400 6600 3400
+Wire Wire Line
+	8100 3400 7600 3400
+Wire Wire Line
+	7600 3500 8100 3500
+Text Label 8100 3500 0    50   ~ 0
+MG1_TEMP_IN
+Wire Wire Line
+	7100 3500 6600 3500
+Text Label 6600 3500 2    50   ~ 0
+MG2_TEMP_IN
+Text Label 8050 6450 0    50   ~ 0
+ACCompressorRelayDRV
+Wire Wire Line
+	4000 2600 2750 2600
+NoConn ~ 350  6000
+Wire Wire Line
+	2750 6100 3800 6100
+Text Label 3800 6100 0    50   ~ 0
+GND
+Wire Wire Line
+	8150 4400 7600 4400
+Wire Wire Line
+	7100 7050 6650 7050
+Text Label 7100 7050 2    50   ~ 0
+PE0
+Text Label 6550 9600 2    50   ~ 0
+SDA
+Text Label 6550 9700 2    50   ~ 0
+SCL
+Text Label 6550 9500 2    50   ~ 0
+GND
+Text Label 7300 9500 0    50   ~ 0
+DigitalPotA1
+Text Label 7300 9600 0    50   ~ 0
+DigitalPotW1
+Text Label 7300 9700 0    50   ~ 0
+DigitalPotA2
+Text Label 7300 9800 0    50   ~ 0
+DigitalPotW2
+NoConn ~ 7100 5550
+NoConn ~ 7600 5450
+Text Label 4200 1600 0    50   ~ 0
+MTH+
+Text Label 4200 1500 0    50   ~ 0
+MTH-
+Wire Wire Line
+	2750 1600 4200 1600
+Wire Wire Line
+	4200 1500 2750 1500
+Wire Wire Line
+	2750 1100 4200 1100
+Wire Wire Line
+	2750 1200 4200 1200
+Wire Wire Line
+	2750 1300 4200 1300
+Wire Wire Line
+	2750 1400 4200 1400
+Text Label 4200 1300 0    50   ~ 0
+HTM-
+Text Label 4200 1400 0    50   ~ 0
+HTM+
+Text Label 4200 1100 0    50   ~ 0
+REQ-
+Text Label 4200 1200 0    50   ~ 0
+REQ+
+Wire Wire Line
+	2750 1000 3900 1000
+$Comp
+L SamacSys_Parts:7-967288-1 J1
+U 1 1 60393340
+P 1750 800
+F 0 "J1" H 2250 1065 50  0000 C CNN
+F 1 "7-967288-1" H 2250 974 50  0000 C CNN
+F 2 "SamacSys_Parts:79672881" H 2600 900 50  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F967288%7FF1%7Fpdf%7FGerman%7FGER_CD_967288_F1_967288-c.pdf%7F7-967288-1" H 2600 800 50  0001 L CNN
+F 4 "AMP - TE CONNECTIVITY - 7-967288-1 - AUTOMOTIVE CONN, PLUG, R/A, 134POS, PCB" H 2600 700 50  0001 L CNN "Description"
+F 5 "25.5" H 2600 600 50  0001 L CNN "Height"
+F 6 "571-7-967288-1" H 2600 500 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-AMP/7-967288-1/?qs=4GfDZFxiN8v4VyLYMsjm7g%3D%3D" H 2600 400 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 2600 300 50  0001 L CNN "Manufacturer_Name"
+F 9 "7-967288-1" H 2600 200 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1750 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 900  3900 900 
+Text Label 2750 2200 0    50   ~ 0
+DigitalPotA2
+Text Label 3900 1000 0    50   ~ 0
+DigitalPotW2
+NoConn ~ 7100 6150
+NoConn ~ 7100 6250
+NoConn ~ 6700 6450
+NoConn ~ 7600 6050
+NoConn ~ 7600 6350
+NoConn ~ 6600 4700
 $EndSCHEMATC
