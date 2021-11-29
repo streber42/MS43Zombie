@@ -30,6 +30,7 @@ F 6 "863-NCV8461DR2G" H 6000 3500 50  0001 L CNN "Mouser Part Number"
 F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NCV8461DR2G/?qs=xGcJQ%252BnsJwsYr7FHbFn8%2Fg%3D%3D" H 6000 3400 50  0001 L CNN "Mouser Price/Stock"
 F 8 "ON Semiconductor" H 6000 3300 50  0001 L CNN "Manufacturer_Name"
 F 9 "NCV8461DR2G" H 6000 3200 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "C154603" H 5050 3800 50  0001 C CNN "JLCPCB_PN"
 	1    5050 3800
 	1    0    0    -1  
 $EndComp

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 36
+Sheet 7 36
 Title ""
 Date ""
 Rev ""
@@ -44,6 +44,7 @@ F 6 "652-MH2029-300Y" H 4900 2600 50  0001 L CNN "Mouser Part Number"
 F 7 "https://www.mouser.co.uk/ProductDetail/Bourns/MH2029-300Y/?qs=3U1hhDIovyEa7983kL6kaA%3D%3D" H 4900 2500 50  0001 L CNN "Mouser Price/Stock"
 F 8 "Bourns" H 4900 2400 50  0001 L CNN "Manufacturer_Name"
 F 9 "MH2029-300Y" H 4900 2300 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "C1015" H 4250 2900 50  0001 C CNN "JLCPCB_PN"
 	1    4250 2900
 	0    -1   -1   0   
 $EndComp
@@ -55,6 +56,7 @@ F 0 "C28" H 4915 3446 50  0000 L CNN
 F 1 "10uF" H 4915 3355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4800 3400 50  0001 C CNN
 F 3 "~" H 4800 3400 50  0001 C CNN
+F 4 "C15850" H 4800 3400 50  0001 C CNN "JLCPCB_PN"
 	1    4800 3400
 	1    0    0    -1  
 $EndComp

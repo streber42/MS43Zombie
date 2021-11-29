@@ -23,6 +23,7 @@ F 0 "C64" H 4365 4446 50  0000 L CNN
 F 1 "0.1uF" H 4365 4355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4250 4400 50  0001 C CNN
 F 3 "~" H 4250 4400 50  0001 C CNN
+F 4 "C49678" H 4250 4400 50  0001 C CNN "JLCPCB_PN"
 	1    4250 4400
 	1    0    0    1   
 $EndComp
@@ -36,6 +37,7 @@ F 0 "C63" H 3865 4446 50  0000 L CNN
 F 1 "10uF" H 3865 4355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3750 4400 50  0001 C CNN
 F 3 "~" H 3750 4400 50  0001 C CNN
+F 4 "C15850" H 3750 4400 50  0001 C CNN "JLCPCB_PN"
 	1    3750 4400
 	1    0    0    1   
 $EndComp
@@ -85,6 +87,7 @@ F 6 "584-AD5243BRMZ2.5" H 5950 3950 50  0001 L CNN "Mouser Part Number"
 F 7 "https://www.mouser.co.uk/ProductDetail/Analog-Devices/AD5243BRMZ25?qs=NmRFExCfTkF%2FoBz%2FYeO%252Bww%3D%3D" H 5950 3850 50  0001 L CNN "Mouser Price/Stock"
 F 8 "Analog Devices" H 5950 3750 50  0001 L CNN "Manufacturer_Name"
 F 9 "AD5243BRMZ2.5" H 5950 3650 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "C143871" H 5100 4250 50  0001 C CNN "JLCPCB_PN"
 	1    5100 4250
 	1    0    0    -1  
 $EndComp

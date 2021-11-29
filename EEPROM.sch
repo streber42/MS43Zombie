@@ -27,6 +27,7 @@ F 6 "511-M24M02-DRMN6TP" H 6200 3300 50  0001 L CNN "Mouser Part Number"
 F 7 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/M24M02-DRMN6TP?qs=0gj%2FgiofzsPtgZ8EdVfF5w%3D%3D" H 6200 3200 50  0001 L CNN "Mouser Price/Stock"
 F 8 "STMicroelectronics" H 6200 3100 50  0001 L CNN "Manufacturer_Name"
 F 9 "M24M02-DRMN6TP" H 6200 3000 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "C115042" H 5250 3600 50  0001 C CNN "JLCPCB_PN"
 	1    5250 3600
 	1    0    0    -1  
 $EndComp
@@ -38,6 +39,7 @@ F 0 "C29" V 5598 2850 50  0000 C CNN
 F 1 "0.1u" V 5689 2850 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5850 2850 50  0001 C CNN
 F 3 "~" H 5850 2850 50  0001 C CNN
+F 4 "C49678" H 5850 2850 50  0001 C CNN "JLCPCB_PN"
 	1    5850 2850
 	0    1    1    0   
 $EndComp
@@ -49,6 +51,7 @@ F 0 "R22" V 6645 3850 50  0000 C CNN
 F 1 "4K7" V 6736 3850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 6890 3840 50  0001 C CNN
 F 3 "~" H 6850 3850 50  0001 C CNN
+F 4 "C17673" H 6850 3850 50  0001 C CNN "JLCPCB_PN"
 	1    6850 3850
 	0    1    1    0   
 $EndComp
@@ -60,6 +63,7 @@ F 0 "R21" V 6595 4150 50  0000 C CNN
 F 1 "4K7" V 6686 4150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 6840 4140 50  0001 C CNN
 F 3 "~" H 6800 4150 50  0001 C CNN
+F 4 "C17673" H 6800 4150 50  0001 C CNN "JLCPCB_PN"
 	1    6800 4150
 	0    1    1    0   
 $EndComp

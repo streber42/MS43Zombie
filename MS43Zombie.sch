@@ -1631,6 +1631,7 @@ F 6 "" H 5200 8600 50  0001 L CNN "Mouser Part Number"
 F 7 "" H 5200 8500 50  0001 L CNN "Mouser Price/Stock"
 F 8 "HY Electronic Corp" H 5200 8400 50  0001 L CNN "Manufacturer_Name"
 F 9 "SS54B" H 5200 8300 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "C22452" H 4750 9000 50  0001 C CNN "JLCPCB_PN"
 	1    4750 9000
 	1    0    0    1   
 $EndComp

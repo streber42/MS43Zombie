@@ -40,6 +40,7 @@ F 6 "863-NCV8402ASTT1G" H 6000 3250 50  0001 L CNN "Mouser Part Number"
 F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NCV8402ASTT1G?qs=5C9Q4QJFsuPUmgEKjIBRjw%3D%3D" H 6000 3150 50  0001 L CNN "Mouser Price/Stock"
 F 8 "ON Semiconductor" H 6000 3050 50  0001 L CNN "Manufacturer_Name"
 F 9 "NCV8402ASTT1G" H 6000 2950 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "C77755" H 5150 3550 50  0001 C CNN "JLCPCB_PN"
 	1    5150 3550
 	1    0    0    -1  
 $EndComp
