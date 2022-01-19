@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 31 49
+Sheet 37 37
 Title ""
 Date ""
 Rev ""
@@ -14,414 +14,243 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L SamacSys_Parts:MCP25625T-E_ML IC18
-U 1 1 60DE64B4
-P 5050 3400
-F 0 "IC18" H 6394 3096 50  0000 L CNN
-F 1 "MCP25625T-E_ML" H 6394 3005 50  0000 L CNN
-F 2 "Package_SO:SSOP-28_3.9x9.9mm_P0.635mm" H 6200 3900 50  0001 L CNN
-F 3 "" H 6200 3800 50  0001 L CNN
-F 4 "Microchip Technology MCP25625T-E/ML, CAN Controller 1Mbit/s CAN 2.0B, 28-Pin QFN" H 6200 3700 50  0001 L CNN "Description"
-F 5 "1" H 6200 3600 50  0001 L CNN "Height"
-F 6 "579-MCP25625T-E/ML" H 6200 3500 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP25625T-E-ML?qs=YlpJWyuQ3PPnkFaP%252BM8ghg%3D%3D" H 6200 3400 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Microchip" H 6200 3300 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCP25625T-E/ML" H 6200 3200 50  0001 L CNN "Manufacturer_Part_Number"
-	1    5050 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5050 3400 4800 3400
-Text HLabel 4800 3400 0    50   Input ~ 0
-SPI2_NSS
-Wire Wire Line
-	5050 3500 4800 3500
-Wire Wire Line
-	5050 3600 4800 3600
-Wire Wire Line
-	5050 3700 4850 3700
-Wire Wire Line
-	4850 3700 4850 3900
-Wire Wire Line
-	4850 3900 4600 3900
-Wire Wire Line
-	5050 3800 4950 3800
-Wire Wire Line
-	4950 3800 4950 4050
-Wire Wire Line
-	4950 4050 4600 4050
-NoConn ~ 5050 3900
-NoConn ~ 5050 4000
-NoConn ~ 5350 4800
-NoConn ~ 5450 4800
-Wire Wire Line
-	5650 4800 5650 5150
-Wire Wire Line
-	5650 5150 5400 5150
-NoConn ~ 5950 4800
-Wire Wire Line
-	6350 4000 6750 4000
-Text HLabel 6750 4000 2    50   Input ~ 0
-CAN3_SBY
-NoConn ~ 6350 3800
-Wire Wire Line
-	6350 3600 6650 3600
-Wire Wire Line
-	6350 3700 6700 3700
-$Comp
-L SamacSys_Parts:X322516MLB4SI Y2
-U 1 1 60DEF295
-P 7300 3050
-F 0 "Y2" H 8100 3315 50  0000 C CNN
-F 1 "X322516MLB4SI" H 8100 3224 50  0000 C CNN
-F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 8750 3150 50  0001 L CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Yangxing-Tech-X322516MLB4SI_C13738.pdf" H 8750 3050 50  0001 L CNN
-F 4 "Crystal" H 8750 2950 50  0001 L CNN "Description"
-F 5 "0.8" H 8750 2850 50  0001 L CNN "Height"
-F 6 "" H 8750 2750 50  0001 L CNN "Mouser Part Number"
-F 7 "" H 8750 2650 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Yangxing Tech" H 8750 2550 50  0001 L CNN "Manufacturer_Name"
-F 9 "X322516MLB4SI" H 8750 2450 50  0001 L CNN "Manufacturer_Part_Number"
-	1    7300 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 3050 7100 3050
-Wire Wire Line
-	7100 3050 7100 2600
-Wire Wire Line
-	9150 2600 9150 3150
-Wire Wire Line
-	9150 3150 8900 3150
-Wire Wire Line
-	8900 3050 9050 3050
-Wire Wire Line
-	9050 3050 9050 3500
-Wire Wire Line
-	9050 3500 6350 3500
-Wire Wire Line
-	6350 3400 7050 3400
-Wire Wire Line
-	7050 3400 7050 3150
-Wire Wire Line
-	7050 3150 7300 3150
-Wire Wire Line
-	6050 2700 6050 2450
-Wire Wire Line
-	6050 2450 6150 2450
-NoConn ~ 5950 2700
-NoConn ~ 5850 2700
-Wire Wire Line
-	5350 2700 5350 2450
-Wire Wire Line
-	5350 2450 5200 2450
-Wire Wire Line
-	5750 2700 5750 2050
-Wire Wire Line
-	5750 2050 6050 2050
-Text HLabel 6050 2050 2    50   Input ~ 0
-CAN3_INT
-Wire Wire Line
-	5650 2700 5650 1950
-Wire Wire Line
-	5650 1950 6050 1950
-Text HLabel 6050 1950 2    50   Input ~ 0
-SPI2_SCK
-Wire Wire Line
-	5550 2700 5550 1850
-Wire Wire Line
-	5550 1850 6050 1850
-Text HLabel 6050 1850 2    50   Input ~ 0
-SPI2_MOSI
-Wire Wire Line
-	5450 2700 5450 1750
-Wire Wire Line
-	5450 1750 6050 1750
-Text HLabel 6050 1750 2    50   Input ~ 0
-SPI2_MISO
-$Comp
-L Device:CP1 C26
-U 1 1 60DFF96D
-P 1100 1900
-F 0 "C26" H 1215 1946 50  0000 L CNN
-F 1 "1uF" H 1215 1855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1100 1900 50  0001 C CNN
-F 3 "~" H 1100 1900 50  0001 C CNN
-	1    1100 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1100 2050 1100 2250
-Wire Wire Line
-	1100 1750 1100 1500
-$Comp
-L Device:CP1 C43
-U 1 1 60E031CF
-P 1100 3200
-F 0 "C43" H 1215 3246 50  0000 L CNN
-F 1 "1uF" H 1215 3155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1100 3200 50  0001 C CNN
-F 3 "~" H 1100 3200 50  0001 C CNN
-	1    1100 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1100 3350 1100 3550
-Wire Wire Line
-	1100 3050 1100 2800
-$Comp
-L SamacSys_Parts:NCV7356D1R2G IC19
+L SamacSys_Parts:NCV7356D1R2G IC8
 U 1 1 60E5AE28
-P 8150 5550
-F 0 "IC19" H 8750 5815 50  0000 C CNN
-F 1 "NCV7356D1R2G" H 8750 5724 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 9200 5650 50  0001 L CNN
-F 3 "http://www.onsemi.com/pub/Collateral/NCV7356-D.PDF" H 9200 5550 50  0001 L CNN
-F 4 "NCV7356D1R2G, ANA SINGLE WIRE CAN NCV7356D1R2G, ANA SINGLE WIRE CAN" H 9200 5450 50  0001 L CNN "Description"
-F 5 "1.75" H 9200 5350 50  0001 L CNN "Height"
-F 6 "863-NCV7356D1R2G" H 9200 5250 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NCV7356D1R2G?qs=8sOby8ZxZLHP72ezjB8c4w%3D%3D" H 9200 5150 50  0001 L CNN "Mouser Price/Stock"
-F 8 "ON Semiconductor" H 9200 5050 50  0001 L CNN "Manufacturer_Name"
-F 9 "NCV7356D1R2G" H 9200 4950 50  0001 L CNN "Manufacturer_Part_Number"
-	1    8150 5550
+P 5000 3600
+F 0 "IC8" H 5600 3865 50  0000 C CNN
+F 1 "NCV7356D1R2G" H 5600 3774 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6050 3700 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/NCV7356-D.PDF" H 6050 3600 50  0001 L CNN
+F 4 "NCV7356D1R2G, ANA SINGLE WIRE CAN NCV7356D1R2G, ANA SINGLE WIRE CAN" H 6050 3500 50  0001 L CNN "Description"
+F 5 "1.75" H 6050 3400 50  0001 L CNN "Height"
+F 6 "863-NCV7356D1R2G" H 6050 3300 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NCV7356D1R2G?qs=8sOby8ZxZLHP72ezjB8c4w%3D%3D" H 6050 3200 50  0001 L CNN "Mouser Price/Stock"
+F 8 "ON Semiconductor" H 6050 3100 50  0001 L CNN "Manufacturer_Name"
+F 9 "NCV7356D1R2G" H 6050 3000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5000 3600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R61
+L Device:R_US R13
 U 1 1 60E5E976
-P 7500 6250
-F 0 "R61" V 7295 6250 50  0000 C CNN
-F 1 "2K7" V 7386 6250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7540 6240 50  0001 C CNN
-F 3 "~" H 7500 6250 50  0001 C CNN
-	1    7500 6250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R62
-U 1 1 60E5F5B9
-P 9800 5350
-F 0 "R62" V 9595 5350 50  0000 C CNN
-F 1 "1K" V 9686 5350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 9840 5340 50  0001 C CNN
-F 3 "~" H 9800 5350 50  0001 C CNN
-	1    9800 5350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R63
-U 1 1 60E5FE47
-P 9800 5800
-F 0 "R63" V 9595 5800 50  0000 C CNN
-F 1 "1K" V 9686 5800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 9840 5790 50  0001 C CNN
-F 3 "~" H 9800 5800 50  0001 C CNN
-	1    9800 5800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:CP1 C47
-U 1 1 60E60E38
-P 10300 4900
-F 0 "C47" H 10415 4946 50  0000 L CNN
-F 1 "100pF" H 10415 4855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 10300 4900 50  0001 C CNN
-F 3 "~" H 10300 4900 50  0001 C CNN
-	1    10300 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:L L3
-U 1 1 60E61705
-P 9800 5650
-F 0 "L3" V 9619 5650 50  0000 C CNN
-F 1 "L" V 9710 5650 50  0000 C CNN
-F 2 "" H 9800 5650 50  0001 C CNN
-F 3 "~" H 9800 5650 50  0001 C CNN
-	1    9800 5650
+P 4350 4300
+F 0 "R13" V 4145 4300 50  0000 C CNN
+F 1 "2K7" V 4236 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4390 4290 50  0001 C CNN
+F 3 "~" H 4350 4300 50  0001 C CNN
+	1    4350 4300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9350 5550 9450 5550
+	5000 3600 4700 3600
 Wire Wire Line
-	9450 5550 9450 5250
+	5000 3900 4850 3900
 Wire Wire Line
-	8150 5550 7850 5550
+	4850 3900 4850 4300
 Wire Wire Line
-	8150 5850 8000 5850
+	4850 4300 4500 4300
+Connection ~ 4850 3900
 Wire Wire Line
-	8000 5850 8000 6250
+	4850 3900 4700 3900
 Wire Wire Line
-	8000 6250 7650 6250
-Connection ~ 8000 5850
+	4200 4300 3750 4300
 Wire Wire Line
-	8000 5850 7850 5850
+	3750 4300 3750 4250
 Wire Wire Line
-	7350 6250 6900 6250
-Wire Wire Line
-	6900 6250 6900 6200
-Wire Wire Line
-	8150 5650 8050 5650
-Text HLabel 8050 5650 0    50   Input ~ 0
+	5000 3700 4700 3700
+Text HLabel 4700 3700 0    50   Input ~ 0
 SW_MODE0
 Wire Wire Line
-	8150 5750 8050 5750
-Text HLabel 8050 5750 0    50   Input ~ 0
+	5000 3800 4700 3800
+Text HLabel 4700 3800 0    50   Input ~ 0
 SW_MODE1
+Text HLabel 3750 4250 0    50   Input ~ 0
+5Vcc
+Text HLabel 4700 3600 0    50   Input ~ 0
+TXCAN
+Text HLabel 4700 3900 0    50   Input ~ 0
+RXCAN
 Wire Wire Line
-	9350 5650 9550 5650
+	6200 3600 6500 3600
 Wire Wire Line
-	9950 5650 10100 5650
-Text HLabel 10800 5650 2    50   Input ~ 0
-CAN_EXT3H
+	6500 3600 6500 3500
+Text HLabel 6500 3500 0    50   Input ~ 0
+GND
 Wire Wire Line
-	9550 5650 9550 5350
+	6200 3700 7000 3700
 Wire Wire Line
-	9550 5350 9650 5350
-Connection ~ 9550 5650
-Wire Wire Line
-	9550 5650 9650 5650
-Wire Wire Line
-	9950 5350 10100 5350
-Wire Wire Line
-	10300 5350 10300 5050
-Wire Wire Line
-	10300 4550 10300 4750
-Wire Wire Line
-	10100 5350 10100 5650
-Connection ~ 10100 5350
-Wire Wire Line
-	10100 5350 10300 5350
-Connection ~ 10100 5650
-Wire Wire Line
-	9350 5750 9550 5750
-Wire Wire Line
-	9550 5800 9650 5800
-Wire Wire Line
-	9950 5800 10100 5800
-Wire Wire Line
-	10100 5800 10100 5650
-Wire Wire Line
-	9550 6050 10200 6050
-Wire Wire Line
-	9550 5650 9550 5750
-Connection ~ 9550 5750
-Wire Wire Line
-	9550 5750 9550 5800
-Connection ~ 9550 5800
-Wire Wire Line
-	9550 5800 9550 6050
-Wire Wire Line
-	9350 5850 9450 5850
-Wire Wire Line
-	9450 5850 9450 6250
-Wire Wire Line
-	9450 6250 10650 6250
-Wire Wire Line
-	10500 6050 10650 6050
-Wire Wire Line
-	10650 6050 10650 6250
+	6200 3800 6350 3800
 $Comp
-L Device:CP1 C51
-U 1 1 60EE5117
-P 11000 6150
-F 0 "C51" H 11115 6196 50  0000 L CNN
-F 1 "1uF" H 11115 6105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 11000 6150 50  0001 C CNN
-F 3 "~" H 11000 6150 50  0001 C CNN
-	1    11000 6150
+L Device:R_US R14
+U 1 1 61A81DBE
+P 6500 3800
+F 0 "R14" V 6295 3800 50  0000 C CNN
+F 1 "6K49" V 6386 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6540 3790 50  0001 C CNN
+F 3 "~" H 6500 3800 50  0001 C CNN
+	1    6500 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 3800 7000 3800
+Wire Wire Line
+	7000 3800 7000 3700
+Wire Wire Line
+	7000 3700 7500 3700
+Connection ~ 7000 3700
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 61A83AFE
+P 8250 3700
+F 0 "L1" H 8250 3915 50  0000 C CNN
+F 1 "47uH" H 8250 3824 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 8250 3700 50  0001 C CNN
+F 3 "~" H 8250 3700 50  0001 C CNN
+	1    8250 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11000 6300 11000 6400
-Connection ~ 11000 6400
+	7850 3700 7850 3250
 Wire Wire Line
-	11000 6400 11150 6400
+	7850 3250 8000 3250
+Connection ~ 7850 3700
 Wire Wire Line
-	11000 6000 11000 5950
-Wire Wire Line
-	10650 6400 10650 6250
-Wire Wire Line
-	10650 6400 11000 6400
-Connection ~ 10650 6250
+	7850 3700 8000 3700
 $Comp
-L Device:CP1 C49
-U 1 1 60EFF62D
-P 10650 3500
-F 0 "C49" H 10765 3546 50  0000 L CNN
-F 1 "1uF" H 10765 3455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 10650 3500 50  0001 C CNN
-F 3 "~" H 10650 3500 50  0001 C CNN
-	1    10650 3500
+L Device:R_US R15
+U 1 1 61A84E92
+P 8150 3250
+F 0 "R15" V 7945 3250 50  0000 C CNN
+F 1 "1K" V 8036 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8190 3240 50  0001 C CNN
+F 3 "~" H 8150 3250 50  0001 C CNN
+	1    8150 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 3900 6300 3900
+Wire Wire Line
+	6300 3900 6300 4050
+Wire Wire Line
+	6300 4050 6550 4050
+Wire Wire Line
+	8650 4050 8650 4500
+Wire Wire Line
+	8650 4500 8550 4500
+$Comp
+L Device:C_Small C2
+U 1 1 61A88600
+P 7500 3850
+F 0 "C2" H 7592 3896 50  0000 L CNN
+F 1 "100pF" H 7592 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7500 3850 50  0001 C CNN
+F 3 "~" H 7500 3850 50  0001 C CNN
+	1    7500 3850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10650 3650 10650 3850
+	7500 3750 7500 3700
+Connection ~ 7500 3700
 Wire Wire Line
-	10650 3350 10650 3100
-Text Label 4850 3700 2    50   ~ 0
-TXCAN
-Text Label 4800 4050 3    50   ~ 0
-RXCAN
-Text Label 7850 5550 2    50   ~ 0
-TXCAN
-Text Label 7850 5850 2    50   ~ 0
-RXCAN
-Text HLabel 1100 1500 0    50   Input ~ 0
-3_3Vcc
-Text HLabel 1100 2800 0    50   Input ~ 0
-5Vcc
-Text HLabel 1100 2250 0    50   Input ~ 0
-GND
-Text HLabel 1100 3550 0    50   Input ~ 0
-GND
-Text HLabel 6900 6200 0    50   Input ~ 0
-5Vcc
-Text HLabel 9450 5250 0    50   Input ~ 0
-GND
-Text HLabel 10300 4550 0    50   Input ~ 0
-GND
-Text HLabel 11000 5950 1    50   Input ~ 0
-GND
-Text HLabel 11150 6400 2    50   Input ~ 0
-12Vcc
-Text HLabel 10650 3100 0    50   Input ~ 0
-5Vcc
-Text HLabel 10650 3850 0    50   Input ~ 0
-GND
+	7500 3700 7850 3700
 Wire Wire Line
-	7100 2600 9150 2600
-Text HLabel 8100 2600 1    50   Input ~ 0
-GND
-Text HLabel 6700 3700 2    50   Input ~ 0
-GND
-Text HLabel 6650 3600 2    50   Input ~ 0
-5Vcc
-Text HLabel 5400 5150 0    50   Input ~ 0
-3_3Vcc
-Text HLabel 4800 3500 0    50   Input ~ 0
-3_3Vcc
-Text HLabel 4800 3600 0    50   Input ~ 0
-5Vcc
-Text HLabel 5200 2450 0    50   Input ~ 0
-GND
-Text HLabel 6150 2450 2    50   Input ~ 0
-GND
+	7500 3950 7500 4050
+Connection ~ 7500 4050
+Wire Wire Line
+	7500 4050 8650 4050
+Wire Wire Line
+	6550 4050 6550 4200
+Connection ~ 6550 4050
+Wire Wire Line
+	6550 4050 7500 4050
 $Comp
-L Device:CP1 C48
-U 1 1 60E60970
-P 10350 6050
-F 0 "C48" V 10602 6050 50  0000 C CNN
-F 1 "100pF" V 10511 6050 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 10350 6050 50  0001 C CNN
-F 3 "~" H 10350 6050 50  0001 C CNN
-	1    10350 6050
-	0    -1   -1   0   
+L Device:C_Small C1
+U 1 1 61A8B506
+P 6550 4300
+F 0 "C1" H 6642 4346 50  0000 L CNN
+F 1 "100nF" H 6642 4255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6550 4300 50  0001 C CNN
+F 3 "~" H 6550 4300 50  0001 C CNN
+	1    6550 4300
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10100 5650 10800 5650
-NoConn ~ 6350 3900
-NoConn ~ 5550 4800
-NoConn ~ 5750 4800
-NoConn ~ 5850 4800
+	6550 4400 6550 4500
+Text HLabel 6550 4500 0    50   Input ~ 0
+GND
+Wire Wire Line
+	8500 3700 8650 3700
+Wire Wire Line
+	9250 3700 9250 3850
+Wire Wire Line
+	8300 3250 8650 3250
+Wire Wire Line
+	8650 3250 8650 3700
+Connection ~ 8650 3700
+Wire Wire Line
+	8650 3700 8900 3700
+$Comp
+L Device:C_Small C3
+U 1 1 61A8F2CF
+P 8900 3900
+F 0 "C3" H 8992 3946 50  0000 L CNN
+F 1 "100pF" H 8992 3855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8900 3900 50  0001 C CNN
+F 3 "~" H 8900 3900 50  0001 C CNN
+	1    8900 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 3800 8900 3700
+Connection ~ 8900 3700
+Wire Wire Line
+	8900 3700 9100 3700
+Wire Wire Line
+	8900 4000 8900 4100
+Text HLabel 8900 4100 0    50   Input ~ 0
+GND
+Wire Wire Line
+	9100 3700 9100 3450
+Connection ~ 9100 3700
+Wire Wire Line
+	9100 3700 9250 3700
+Text HLabel 9100 3450 0    50   Input ~ 0
+CANH_EXT
+$Comp
+L SamacSys_Parts:NUP1105LT1G IC9
+U 1 1 61A93F40
+P 9250 3850
+F 0 "IC9" H 9700 4115 50  0000 C CNN
+F 1 "NUP1105LT1G" H 9700 4024 50  0000 C CNN
+F 2 "SamacSys_Parts:SOT96P237X111-3N" H 10000 3950 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/NUP1105L-D.PDF" H 10000 3850 50  0001 L CNN
+F 4 "Single Line CAN/LIN Bus Protector" H 10000 3750 50  0001 L CNN "Description"
+F 5 "1.11" H 10000 3650 50  0001 L CNN "Height"
+F 6 "863-NUP1105LT1G" H 10000 3550 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NUP1105LT1G?qs=ZXBb0xZ9WeAzof0fedX54g%3D%3D" H 10000 3450 50  0001 L CNN "Mouser Price/Stock"
+F 8 "ON Semiconductor" H 10000 3350 50  0001 L CNN "Manufacturer_Name"
+F 9 "NUP1105LT1G" H 10000 3250 50  0001 L CNN "Manufacturer_Part_Number"
+	1    9250 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 3850 10300 3850
+Text HLabel 10300 3850 2    50   Input ~ 0
+GND
+NoConn ~ 9250 3950
+$Comp
+L Diode:MRA4004T3G D2
+U 1 1 61A9774D
+P 8400 4500
+F 0 "D2" H 8400 4716 50  0000 C CNN
+F 1 "MRA4004T3G" H 8400 4625 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 8400 4325 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/MRA4003T3-D.PDF" H 8400 4500 50  0001 C CNN
+	1    8400 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 4500 8000 4500
+Text HLabel 8000 4500 0    50   Input ~ 0
++12V
 $EndSCHEMATC

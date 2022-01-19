@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 36
+Sheet 1 37
 Title ""
 Date ""
 Rev ""
@@ -368,7 +368,7 @@ Text Label 12900 3400 0    50   ~ 0
 CAN_EXT2-
 Text Label 12900 3150 0    50   ~ 0
 CAN_EXT2+
-Text Label 6650 5950 2    50   ~ 0
+Text Label 6700 5950 2    50   ~ 0
 UART4_TX
 Text Label 8050 5850 0    50   ~ 0
 UART4_RX
@@ -376,15 +376,15 @@ Text Label 4300 2300 2    50   ~ 0
 UART3_TX
 Text Label 4300 2400 2    50   ~ 0
 UART3_RX
-Text Label 7100 4100 2    50   ~ 0
+Text Label 6600 4100 2    50   ~ 0
 UART3_RX
 Text Label 4350 2850 2    50   ~ 0
 SDA
 Text Label 4350 2950 2    50   ~ 0
 SCL
-Text Label 7100 4000 2    50   ~ 0
+Text Label 6600 4000 2    50   ~ 0
 SDA
-Text Label 7600 3900 0    50   ~ 0
+Text Label 8150 3900 0    50   ~ 0
 SCL
 Text Label 4350 3350 2    50   ~ 0
 TRANS_PB1
@@ -412,11 +412,11 @@ F7 "GEAR1" O R 5250 3350 50
 F8 "3_3Vcc" I L 4350 3650 50 
 F9 "GND" I R 5250 3650 50 
 $EndSheet
-Text Label 7600 6850 0    50   ~ 0
+Text Label 8050 6850 0    50   ~ 0
 GEAR1
-Text Label 7100 6850 2    50   ~ 0
+Text Label 6700 6850 2    50   ~ 0
 GEAR2
-Text Label 7600 6750 0    50   ~ 0
+Text Label 8050 6750 0    50   ~ 0
 GEAR3
 Text Label 5400 4050 0    50   ~ 0
 PC0
@@ -424,15 +424,15 @@ Text Label 5300 6900 0    50   ~ 0
 MG1_TEMP_IN
 Text Label 5300 6250 0    50   ~ 0
 MG2_TEMP_IN
-Text Label 7100 6350 2    50   ~ 0
+Text Label 6700 6350 2    50   ~ 0
 PC0
-Text Label 7600 6250 0    50   ~ 0
+Text Label 8050 6250 0    50   ~ 0
 PC1
 Text Label 7100 6250 2    50   ~ 0
 PC2
 Text Label 7600 6150 0    50   ~ 0
 PC3
-Text Label 7600 3300 0    50   ~ 0
+Text Label 8100 3300 0    50   ~ 0
 OIL_PWM
 Text Label 350  5900 2    50   ~ 0
 OIL_PUMP_PWM
@@ -440,7 +440,7 @@ Text Label 10000 7650 0    50   ~ 0
 TRANS_SP
 Text Label 9450 7700 2    50   ~ 0
 SP
-Text Label 7600 4500 0    50   ~ 0
+Text Label 8150 4500 0    50   ~ 0
 SP
 Text Label 11800 2300 2    50   ~ 0
 CAN1_TX
@@ -450,21 +450,21 @@ Text Label 11800 3150 2    50   ~ 0
 CAN2_TX
 Text Label 11800 3400 2    50   ~ 0
 CAN2_RX
-Text Label 7100 3800 2    50   ~ 0
+Text Label 6600 3800 2    50   ~ 0
 CAN2_RX
-Text Label 7600 3800 0    50   ~ 0
+Text Label 8150 3800 0    50   ~ 0
 CAN2_TX
-Text Label 7600 5350 0    50   ~ 0
+Text Label 8050 5350 0    50   ~ 0
 CAN1_RX
-Text Label 7100 5450 2    50   ~ 0
+Text Label 6700 5450 2    50   ~ 0
 CAN1_TX
-Text Label 7100 6750 2    50   ~ 0
+Text Label 6700 6750 2    50   ~ 0
 USART2_REQ
-Text Label 7600 3200 0    50   ~ 0
+Text Label 8100 3200 0    50   ~ 0
 USART2_TX
-Text Label 7100 6650 2    50   ~ 0
+Text Label 6700 6650 2    50   ~ 0
 USART2_RX
-Text Label 7100 3200 2    50   ~ 0
+Text Label 6600 3200 2    50   ~ 0
 USART2_CLK
 Text Label 9250 1000 2    50   ~ 0
 USART2_REQ
@@ -482,15 +482,15 @@ Text Label 9250 6600 2    50   ~ 0
 SL1-
 Text Label 9250 7150 2    50   ~ 0
 SL2-
-Text Label 7600 5950 0    50   ~ 0
+Text Label 8050 5950 0    50   ~ 0
 SL1-
-Text Label 7600 4000 0    50   ~ 0
+Text Label 8150 4000 0    50   ~ 0
 UART3_TX
 Text Label 8150 4400 0    50   ~ 0
 INV_POWER
 Text Label 7100 5350 2    50   ~ 0
 RESET
-Text Label 7100 6050 2    50   ~ 0
+Text Label 6700 6050 2    50   ~ 0
 SL2-
 Text Label 7400 1050 0    50   ~ 0
 START_IN
@@ -784,7 +784,7 @@ Text Label 13500 8700 0    50   ~ 0
 UART4_RX
 Text Label 6700 6550 2    50   ~ 0
 LIN_WAKE
-Text Label 8050 6550 0    50   ~ 0
+Text Label 6700 6450 2    50   ~ 0
 LIN_NSLP
 Text Label 10700 4100 0    50   ~ 0
 OIL_PUMP_PWM
@@ -807,15 +807,15 @@ Text Label 10600 9250 0    50   ~ 0
 SignalFuelPumpRelay
 Text Label 9250 9300 2    50   ~ 0
 FuelPumpRelayDRV
-Text Label 7100 3300 2    50   ~ 0
+Text Label 6600 3300 2    50   ~ 0
 BRAKE
-Text Label 7600 6650 0    50   ~ 0
+Text Label 8050 6650 0    50   ~ 0
 FOR_IN
-Text Label 7600 5650 0    50   ~ 0
+Text Label 8050 5650 0    50   ~ 0
 T15_IN
-Text Label 6650 5650 2    50   ~ 0
+Text Label 6700 5650 2    50   ~ 0
 START_IN
-Text Label 7100 5850 2    50   ~ 0
+Text Label 8050 6350 0    50   ~ 0
 REV_IN
 $Sheet
 S 6550 9400 750  450 
@@ -1358,7 +1358,7 @@ Text Label 7100 7150 2    50   ~ 0
 GND
 Text Label 7600 7050 0    50   ~ 0
 GND
-Text Label 7600 7150 0    50   ~ 0
+Text Label 8050 7150 0    50   ~ 0
 5Vcc
 Text Label 7600 4900 0    50   ~ 0
 5Vcc
@@ -1366,7 +1366,7 @@ Text Label 7100 3100 2    50   ~ 0
 RST
 Text Label 5900 4200 2    50   ~ 0
 RST
-Text Label 7600 3700 0    50   ~ 0
+Text Label 8150 3700 0    50   ~ 0
 12V_MEASURE
 Text Label 7100 3500 2    50   ~ 0
 PE12
@@ -1386,7 +1386,7 @@ Text Label 7600 5750 0    50   ~ 0
 RTC_TAMPER
 Text Label 7600 6950 0    50   ~ 0
 PE1
-Text Label 7100 6950 2    50   ~ 0
+Text Label 6700 6950 2    50   ~ 0
 LED
 NoConn ~ 7600 5750
 NoConn ~ 7100 5350
@@ -1415,7 +1415,6 @@ Text Label 7950 1300 2    50   ~ 0
 12Vcc
 Text Label 8750 1300 0    50   ~ 0
 12V_MEASURE
-NoConn ~ 7100 6950
 $Sheet
 S 12350 9450 850  350 
 U 61F2054A
@@ -1506,7 +1505,6 @@ GND
 NoConn ~ 350  6100
 NoConn ~ 350  6200
 NoConn ~ 350  6300
-NoConn ~ 350  4300
 NoConn ~ 350  4400
 NoConn ~ 7100 3600
 NoConn ~ 7600 3600
@@ -1623,7 +1621,7 @@ U 1 1 625A2FF4
 P 4750 9000
 F 0 "D1" H 5050 8733 50  0000 C CNN
 F 1 "SS54B" H 5050 8824 50  0000 C CNN
-F 2 "DIOM5336X244N" H 5200 9000 50  0001 L CNN
+F 2 "SamacSys_Parts:DIOM5336X244N" H 5200 9000 50  0001 L CNN
 F 3 "" H 5200 8900 50  0001 L CNN
 F 4 "HY Electronic Corp SS54B, SMT Rectifier Schottky Diode, 40V 5A, 2-Pin SMB" H 5200 8800 50  0001 L CNN "Description"
 F 5 "2.44" H 5200 8700 50  0001 L CNN "Height"
@@ -1654,8 +1652,8 @@ Wire Wire Line
 Wire Wire Line
 	1100 8400 1100 8850
 Wire Wire Line
-	7100 3700 6650 3700
-Text Label 6650 3700 2    50   ~ 0
+	7100 3700 6600 3700
+Text Label 6600 3700 2    50   ~ 0
 COOLANT_PUMP_1
 Wire Wire Line
 	7600 6450 8050 6450
@@ -1671,20 +1669,18 @@ Text Label 6650 7050 2    50   ~ 0
 OIL_POWER
 Wire Wire Line
 	7600 4600 7950 4600
-Text Label 8100 6950 0    50   ~ 0
+Text Label 8050 6950 0    50   ~ 0
 FuelPumpRelayDRV
 Wire Wire Line
 	7100 4600 6600 4600
-Wire Wire Line
-	6600 4600 6600 4550
-Text Label 6600 4550 2    50   ~ 0
+Text Label 6600 4600 2    50   ~ 0
 ReverseRelayDRV
 Wire Wire Line
 	9450 10950 9300 10950
 Text Label 9300 10950 2    50   ~ 0
 FuelInjectorDRV
 Wire Wire Line
-	7100 5650 6650 5650
+	7100 5650 6700 5650
 Text Label 7100 5750 2    50   ~ 0
 USB_VBUS_ON
 NoConn ~ 7100 5750
@@ -1703,7 +1699,7 @@ PC11
 Text Label 7100 5950 2    50   ~ 0
 PC10
 Wire Wire Line
-	6650 5950 7100 5950
+	6700 5950 7100 5950
 Wire Wire Line
 	8050 5850 7600 5850
 Wire Wire Line
@@ -1716,7 +1712,7 @@ Text Label 7100 4500 2    50   ~ 0
 PD11
 NoConn ~ 7100 4500
 Wire Wire Line
-	8100 6950 7600 6950
+	8050 6950 7600 6950
 NoConn ~ 7950 4600
 Wire Wire Line
 	7100 3400 6600 3400
@@ -1724,11 +1720,11 @@ Wire Wire Line
 	8100 3400 7600 3400
 Wire Wire Line
 	7600 3500 8100 3500
-Text Label 8100 3500 0    50   ~ 0
+Text Label 8050 6050 0    50   ~ 0
 MG1_TEMP_IN
 Wire Wire Line
 	7100 3500 6600 3500
-Text Label 6600 3500 2    50   ~ 0
+Text Label 6700 6150 2    50   ~ 0
 MG2_TEMP_IN
 Text Label 8050 6450 0    50   ~ 0
 ACCompressorRelayDRV
@@ -1759,8 +1755,6 @@ Text Label 7300 9700 0    50   ~ 0
 DigitalPotA2
 Text Label 7300 9800 0    50   ~ 0
 DigitalPotW2
-NoConn ~ 7100 5550
-NoConn ~ 7600 5450
 Text Label 4200 1600 0    50   ~ 0
 MTH+
 Text Label 4200 1500 0    50   ~ 0
@@ -1810,10 +1804,326 @@ Text Label 2750 2200 0    50   ~ 0
 DigitalPotA2
 Text Label 3900 1000 0    50   ~ 0
 DigitalPotW2
-NoConn ~ 7100 6150
 NoConn ~ 7100 6250
-NoConn ~ 6700 6450
-NoConn ~ 7600 6050
-NoConn ~ 7600 6350
 NoConn ~ 6600 4700
+$Sheet
+S 11900 3800 1200 500 
+U 61A5BB74
+F0 "SWCAN" 50
+F1 "CAN3.sch" 50
+F2 "SW_MODE0" I L 11900 3850 50 
+F3 "SW_MODE1" I L 11900 3950 50 
+F4 "5Vcc" I R 13100 4150 50 
+F5 "TXCAN" I L 11900 4150 50 
+F6 "RXCAN" I L 11900 4250 50 
+F7 "GND" I R 13100 3850 50 
+F8 "CANH_EXT" I R 13100 3950 50 
+F9 "+12V" I R 13100 4050 50 
+$EndSheet
+$Comp
+L YAAJ_BluePill:YAAJ_BluePill U1
+U 1 1 61AA1570
+P 13450 6250
+F 0 "U1" H 13450 4919 50  0000 C CNN
+F 1 "YAAJ_BluePill" H 13450 4828 50  0000 C CNN
+F 2 "Footprints:YAAJ_BluePill_1" V 13375 7200 50  0001 C CNN
+F 3 "" V 13375 7200 50  0001 C CNN
+	1    13450 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 6950 12500 6950
+Wire Wire Line
+	12650 7050 12500 7050
+Text Label 12500 6950 2    50   ~ 0
+SWCAN_RX
+Text Label 12500 7050 2    50   ~ 0
+SWCAN_TX
+Wire Wire Line
+	11900 4150 11850 4150
+Text Label 11850 4150 2    50   ~ 0
+SWCAN_TX
+Wire Wire Line
+	11900 4250 11850 4250
+Text Label 11850 4250 2    50   ~ 0
+SWCAN_RX
+Wire Wire Line
+	12650 6750 12500 6750
+Wire Wire Line
+	12650 6850 12500 6850
+Wire Wire Line
+	11900 3850 11850 3850
+Wire Wire Line
+	11900 3950 11850 3950
+Text Label 11850 3850 2    50   ~ 0
+SWCAN_MODE0
+Text Label 11850 3950 2    50   ~ 0
+SWCAN_MODE1
+Text Label 12500 6750 2    50   ~ 0
+SWCAN_MODE1
+Text Label 12500 6850 2    50   ~ 0
+SWCAN_MODE0
+Wire Wire Line
+	12650 5550 12500 5550
+Wire Wire Line
+	12650 5450 12500 5450
+Wire Wire Line
+	12650 5950 12500 5950
+Wire Wire Line
+	12650 6050 12500 6050
+Text Label 12500 5450 2    50   ~ 0
+HEATER_CONTACTOR
+Text Label 12500 5550 2    50   ~ 0
+HEATER_PUMP_ENABLE
+Text Label 12500 5950 2    50   ~ 0
+IHKA_DEMAND_IN
+Text Label 12500 6050 2    50   ~ 0
+VCU_DEMAND_IN
+Wire Wire Line
+	12650 6450 12500 6450
+Text Label 12500 6450 2    50   ~ 0
+ERROR_LIGHT
+Wire Wire Line
+	14250 6050 14450 6050
+Wire Wire Line
+	14250 6150 14450 6150
+Wire Wire Line
+	14250 6250 14450 6250
+Wire Wire Line
+	14250 6350 14450 6350
+Wire Wire Line
+	14250 6450 14450 6450
+Text Label 14450 6450 0    50   ~ 0
+UART5_TX
+Text Label 14450 6350 0    50   ~ 0
+UART5_RX
+Text Label 14450 6250 0    50   ~ 0
+WATER_TEMP
+Text Label 14450 6150 0    50   ~ 0
+EXTRA_TEMP
+Text Label 14450 6050 0    50   ~ 0
+WATER_PUMP_PWM
+NoConn ~ 13250 5150
+Wire Wire Line
+	13350 5150 13350 5000
+Text Label 13350 5000 2    50   ~ 0
+5Vcc
+Wire Wire Line
+	13450 5150 13450 5000
+Wire Wire Line
+	13450 5000 13500 5000
+Wire Wire Line
+	13550 5000 13550 5150
+Wire Wire Line
+	13500 5000 13500 4900
+Connection ~ 13500 5000
+Wire Wire Line
+	13500 5000 13550 5000
+Text Label 13500 4900 0    50   ~ 0
+3_3Vcc
+Wire Wire Line
+	13250 7350 13250 7500
+Wire Wire Line
+	13450 7500 13450 7350
+Wire Wire Line
+	13250 7500 13350 7500
+Wire Wire Line
+	13350 7350 13350 7500
+Connection ~ 13350 7500
+Wire Wire Line
+	13350 7500 13450 7500
+Wire Wire Line
+	13350 7500 13350 7650
+Text Label 13350 7650 0    50   ~ 0
+GND
+Wire Wire Line
+	13100 3850 13200 3850
+Wire Wire Line
+	13100 3950 13200 3950
+Wire Wire Line
+	13100 4050 13200 4050
+Wire Wire Line
+	13100 4150 13200 4150
+Text Label 13200 3850 0    50   ~ 0
+GND
+Text Label 13200 4050 0    50   ~ 0
+12Vcc
+Text Label 13200 4150 0    50   ~ 0
+5Vcc
+NoConn ~ 14250 6950
+NoConn ~ 14250 6850
+NoConn ~ 14250 6750
+NoConn ~ 14250 6650
+NoConn ~ 14250 6550
+NoConn ~ 14250 5950
+NoConn ~ 14250 5850
+NoConn ~ 14250 5750
+NoConn ~ 14250 5650
+NoConn ~ 14250 5550
+NoConn ~ 14250 5450
+NoConn ~ 12650 5650
+NoConn ~ 12650 5750
+NoConn ~ 12650 6650
+NoConn ~ 12650 6550
+NoConn ~ 12650 6350
+NoConn ~ 12650 6250
+NoConn ~ 12650 6150
+NoConn ~ 12650 5850
+Wire Wire Line
+	6600 4100 7100 4100
+Wire Wire Line
+	8150 4000 7600 4000
+Wire Wire Line
+	8150 3700 7600 3700
+Wire Wire Line
+	7600 3800 8150 3800
+Wire Wire Line
+	7100 3800 6600 3800
+Wire Wire Line
+	8150 3900 7600 3900
+Wire Wire Line
+	7100 4000 6600 4000
+Text Label 7600 3700 0    50   ~ 0
+PB1
+Text Label 7100 3800 2    50   ~ 0
+PB5
+Text Label 7600 3800 0    50   ~ 0
+PB6
+Text Label 7600 3900 0    50   ~ 0
+PB8
+Text Label 7100 4000 2    50   ~ 0
+PB9
+Text Label 7600 4000 0    50   ~ 0
+PB10
+Text Label 7100 4100 2    50   ~ 0
+PB11
+Wire Wire Line
+	8150 4500 7600 4500
+Text Label 7600 4500 0    50   ~ 0
+PD12
+Wire Wire Line
+	6600 3300 7100 3300
+Wire Wire Line
+	8100 3300 7600 3300
+Wire Wire Line
+	8100 3200 7600 3200
+Wire Wire Line
+	6600 3200 7100 3200
+Text Label 7100 3200 2    50   ~ 0
+PA1
+Text Label 7600 3200 0    50   ~ 0
+PA2
+Text Label 7100 3300 2    50   ~ 0
+PE8
+Text Label 7600 3300 0    50   ~ 0
+PE9
+Wire Wire Line
+	7100 5450 6700 5450
+Wire Wire Line
+	6700 5850 7100 5850
+Wire Wire Line
+	6700 6050 7100 6050
+Wire Wire Line
+	6700 6650 7100 6650
+Wire Wire Line
+	7100 6750 6700 6750
+Wire Wire Line
+	6700 6850 7100 6850
+Wire Wire Line
+	7600 5350 8050 5350
+Wire Wire Line
+	7600 5650 8050 5650
+Wire Wire Line
+	7600 5950 8050 5950
+Wire Wire Line
+	7600 6650 8050 6650
+Wire Wire Line
+	8050 6750 7600 6750
+Wire Wire Line
+	7600 6850 8050 6850
+Text Label 7600 6350 0    50   ~ 0
+PA8
+Text Label 7100 6050 2    50   ~ 0
+PC8
+Text Label 7600 5950 0    50   ~ 0
+PC9
+Text Label 7100 5850 2    50   ~ 0
+PC12
+Text Label 7600 5650 0    50   ~ 0
+PD6
+Text Label 7600 5450 0    50   ~ 0
+PD2
+Text Label 7100 5550 2    50   ~ 0
+PD3
+Text Label 7600 5350 0    50   ~ 0
+PD0
+Text Label 7100 5450 2    50   ~ 0
+PD1
+Text Label 7100 6650 2    50   ~ 0
+PA3
+Text Label 7600 6650 0    50   ~ 0
+PE7
+Text Label 7100 6750 2    50   ~ 0
+PE6
+Text Label 7600 6750 0    50   ~ 0
+PE5
+Text Label 7100 6850 2    50   ~ 0
+PE4
+Text Label 7600 6850 0    50   ~ 0
+PE3
+Wire Wire Line
+	7100 6950 6700 6950
+Text Label 7100 6950 2    50   ~ 0
+PE2
+Wire Wire Line
+	6700 6150 7100 6150
+Wire Wire Line
+	7600 6050 8050 6050
+NoConn ~ 6600 3500
+NoConn ~ 8100 3500
+Text Label 6700 5850 2    50   ~ 0
+UART5_TX
+Wire Wire Line
+	7600 5450 8050 5450
+Text Label 8050 5450 0    50   ~ 0
+UART5_RX
+NoConn ~ 7100 6950
+NoConn ~ 8050 6550
+Wire Wire Line
+	7100 5550 6700 5550
+Text Label 6700 5550 2    50   ~ 0
+VCU_DEMAND_IN
+Text Label 350  4300 2    50   ~ 0
+IHKA_DEMAND_IN
+Wire Wire Line
+	7600 6350 8050 6350
+Text Label 8050 6550 0    50   ~ 0
+USART2_CK
+Wire Wire Line
+	7600 7150 7850 7150
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6232B610
+P 7850 7150
+F 0 "#FLG0102" H 7850 7225 50  0001 C CNN
+F 1 "PWR_FLAG" H 7850 7323 50  0000 C CNN
+F 2 "" H 7850 7150 50  0001 C CNN
+F 3 "~" H 7850 7150 50  0001 C CNN
+	1    7850 7150
+	-1   0    0    1   
+$EndComp
+Connection ~ 7850 7150
+Wire Wire Line
+	7850 7150 8050 7150
+NoConn ~ 12650 5450
+NoConn ~ 12650 5550
+NoConn ~ 14250 6050
+NoConn ~ 14250 6150
+NoConn ~ 14250 6250
+NoConn ~ 12650 6450
+NoConn ~ 13600 6050
+Wire Wire Line
+	6700 6350 7100 6350
+Wire Wire Line
+	8050 6250 7600 6250
 $EndSCHEMATC

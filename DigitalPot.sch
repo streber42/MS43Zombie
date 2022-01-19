@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 23 36
+Sheet 23 37
 Title ""
 Date ""
 Rev ""
@@ -79,7 +79,7 @@ AR Path="/60F3839B/6286902C" Ref="IC5"  Part="1"
 AR Path="/60F3F96F/6286902C" Ref="IC?"  Part="1" 
 F 0 "IC5" H 5600 4515 50  0000 C CNN
 F 1 "AD5243BRMZ2.5" H 5600 4424 50  0000 C CNN
-F 2 "SOP50P490X110-10N" H 5950 4350 50  0001 L CNN
+F 2 "SamacSys_Parts:SOP50P490X110-10N" H 5950 4350 50  0001 L CNN
 F 3 "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-4/DSA-69649.pdf" H 5950 4250 50  0001 L CNN
 F 4 "AD5243BRMZ2.5, Digital Potentiometer 2.5k 256-Position 2-channel Serial-2 Wire, Serial-I2C 10-Pin MSOP" H 5950 4150 50  0001 L CNN "Description"
 F 5 "1.1" H 5950 4050 50  0001 L CNN "Height"
